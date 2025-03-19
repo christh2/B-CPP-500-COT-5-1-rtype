@@ -1,0 +1,59 @@
+{
+    "entities": [
+      "entity",
+      "entity1",
+      "entity2",
+      "entity_name",
+      "score_text",
+      "entity_back"
+    ],
+    "sprites": [
+      { "entity": "entity", "asset": "back1", "scale": {"x": 1, "y": 1} },
+      { "entity": "entity1", "asset": "back2", "scale": {"x": 1, "y": 1} },
+      { "entity": "entity2", "asset": "back3", "scale": {"x": 1, "y": 1} },
+      {
+        "entity": "entity_back",
+        "asset": "undo",
+        "scale": {"x": 1.5, "y": 1.5}
+      }
+    ],
+    "spritesheets": [],
+    "texts": [
+      { "entity": "entity_name", "content": "game over", "font": "main_font", "color": {"r": 255, "g": 255, "b": 255}, "size": 70 },
+      { "entity": "score_text", "content": "Scores:", "font": "main_font", "color": {"r": 255, "g": 255, "b": 255}, "size": 50 }
+    ],
+    "positions": [
+      { "entity": "entity", "x": 5, "y": 5 },
+      { "entity": "entity1", "x": 1905, "y": 5 },
+      { "entity": "entity2", "x": 3805, "y": 5 },
+      { "entity": "entity_back", "x": 1800, "y": 20 },
+      { "entity": "score_text", "x": 400, "y": 100 },
+      { "entity": "entity_name", "x": 800, "y": 20 }
+    ],
+    "clickables": [
+      {
+        "entity": "entity_back",
+        "name": "back"
+      }
+    ],
+    "colliders": [
+      {
+        "entity": "entity_back",
+        "width": 100,
+        "height": 100
+      }
+    ],
+    "sounds": [],
+    "inputs": [],
+    "rectangles": [
+      
+    ],
+    "circles": [],
+    "velocities": [
+      { "entity": "entity", "x": 0.03, "y": 0, "dir_x": -1, "dir_y": 1 },
+      { "entity": "entity1", "x": 0.03, "y": 0, "dir_x": -1, "dir_y": 1 },
+      { "entity": "entity2", "x": 0.03, "y": 0, "dir_x": -1, "dir_y": 1 }
+    ],
+    "snacks": []
+  }
+  

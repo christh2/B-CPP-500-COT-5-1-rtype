@@ -1,0 +1,106 @@
+{
+    "circles": [
+    ],
+    "clickables": [
+    ],
+    "colliders": [
+    ],
+    "entities": [
+        "",
+        ""
+    ],
+    "inputs": [
+    ],
+    "positions": [
+    ],
+    "rectangles": [
+    ],
+    "snacks": [
+    ],
+    "sounds": [
+    ],
+    "sprites": [
+        {
+            "asset": "",
+            "entity": "",
+            "scale": {
+                "x": 1,
+                "y": 1
+            }
+        },
+        {
+            "asset": "",
+            "entity": "",
+            "scale": {
+                "x": 1,
+                "y": 1
+            }
+        },
+        {
+            "asset": "",
+            "entity": "",
+            "scale": {
+                "x": 1,
+                "y": 1
+            }
+        },
+        {
+            "asset": "",
+            "entity": "",
+            "scale": {
+                "x": 1,
+                "y": 1
+            }
+        }
+    ],
+    "spritesheets": [
+    ],
+    "texts": [
+        {
+            "color": {
+                "b": 99,
+                "g": 99,
+                "r": 99
+            },
+            "content": "",
+            "entity": "",
+            "font": "",
+            "size": 12
+        },
+        {
+            "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+            },
+            "content": "",
+            "entity": "",
+            "font": "",
+            "size": 12
+        },
+        {
+            "color": {
+                "b": 25,
+                "g": 250,
+                "r": 225
+            },
+            "content": "bossee",
+            "entity": "christ",
+            "font": "arial",
+            "size": 12
+        },
+        {
+            "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+            },
+            "content": "",
+            "entity": "",
+            "font": "",
+            "size": 12
+        }
+    ],
+    "velocities": [
+    ]
+}

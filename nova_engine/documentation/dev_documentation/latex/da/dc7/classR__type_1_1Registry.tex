@@ -1,0 +1,306 @@
+\hypertarget{classR__type_1_1Registry}{}\doxysection{R\+\_\+type\+::Registry Class Reference}
+\label{classR__type_1_1Registry}\index{R\_type::Registry@{R\_type::Registry}}
+
+
+A class that manages entities and components in a hybrid array system.  
+
+
+
+
+{\ttfamily \#include $<$register.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classR__type_1_1Registry_ae0a0067c8f0995a358c3597ea00bd580}{entity\+\_\+id}} = std\+::size\+\_\+t
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classR__type_1_1Registry_a7744c1757d27f17d221372a6b6028c97}{Registry}} ()=default
+\item 
+\mbox{\hyperlink{classR__type_1_1Registry_ad2045bc58b5d20d5f71c1c8ced946b35}{$\sim$\+Registry}} ()=default
+\item 
+{\footnotesize template$<$class Component $>$ }\\void \mbox{\hyperlink{classR__type_1_1Registry_a620015a7c397c8e3f3f7af3072502be7}{init\+\_\+sparse\+\_\+array}} (std\+::type\+\_\+index type)
+\item 
+{\footnotesize template$<$class Component $>$ }\\void \mbox{\hyperlink{classR__type_1_1Registry_adeaf8614dfb2e87dcc3d84f8291b8a0b}{init\+\_\+compact\+\_\+array}} (std\+::type\+\_\+index type)
+\item 
+{\footnotesize template$<$class Component $>$ }\\\mbox{\hyperlink{classR__type_1_1hybrid__array}{hybrid\+\_\+array}}$<$ Component $>$ \& \mbox{\hyperlink{classR__type_1_1Registry_a2fbaaa7263a2b71140b2f80969ddf77f}{register\+\_\+component}} (std\+::string fact, bool is\+\_\+common=true)
+\item 
+{\footnotesize template$<$class Component $>$ }\\std\+::optional$<$ Component $>$ \& \mbox{\hyperlink{classR__type_1_1Registry_a96616521d94c8442b0d1476357272f09}{get\+\_\+component}} (\mbox{\hyperlink{classR__type_1_1Registry_ae0a0067c8f0995a358c3597ea00bd580}{entity\+\_\+id}} index)
+\item 
+{\footnotesize template$<$class Component $>$ }\\std\+::optional$<$ Component $>$ const \mbox{\hyperlink{classR__type_1_1Registry_ad26f1d046a58254b41573e315b9deddd}{get\+\_\+component}} (\mbox{\hyperlink{classR__type_1_1Registry_ae0a0067c8f0995a358c3597ea00bd580}{entity\+\_\+id}} index) const
+\item 
+{\footnotesize template$<$class Component $>$ }\\\mbox{\hyperlink{classR__type_1_1hybrid__array}{hybrid\+\_\+array}}$<$ Component $>$ \& \mbox{\hyperlink{classR__type_1_1Registry_ad9fb15bd873064cc18daf122ab248be7}{get\+\_\+registry}} ()
+\item 
+{\footnotesize template$<$class Component $>$ }\\\mbox{\hyperlink{classR__type_1_1hybrid__array}{hybrid\+\_\+array}}$<$ Component $>$ const  \& \mbox{\hyperlink{classR__type_1_1Registry_ac764a9038e7ee13fdc9ed536d5413e91}{get\+\_\+registry}} () const
+\item 
+\mbox{\hyperlink{classR__type_1_1Entity}{Entity}} \mbox{\hyperlink{classR__type_1_1Registry_a407cb16309fb851836b56450807d3762}{spawn\+\_\+entity}} ()
+\item 
+\mbox{\hyperlink{classR__type_1_1Entity}{Entity}} \mbox{\hyperlink{classR__type_1_1Registry_ae7a6739f36355a70d9a371ed15d15874}{entity\+\_\+from\+\_\+index}} (\mbox{\hyperlink{classR__type_1_1Registry_ae0a0067c8f0995a358c3597ea00bd580}{entity\+\_\+id}} index)
+\item 
+void \mbox{\hyperlink{classR__type_1_1Registry_ae0c21a1113d925670d56122bb48722ae}{kill\+\_\+entity}} (\mbox{\hyperlink{classR__type_1_1Registry_ae0a0067c8f0995a358c3597ea00bd580}{entity\+\_\+id}} size)
+\item 
+{\footnotesize template$<$typename Component $>$ }\\void \mbox{\hyperlink{classR__type_1_1Registry_ae61a26ba9d8e20be50ee677ab6e93b90}{add\+\_\+component}} (\mbox{\hyperlink{classR__type_1_1Registry_ae0a0067c8f0995a358c3597ea00bd580}{entity\+\_\+id}} entity, Component component)
+\item 
+{\footnotesize template$<$typename Component $>$ }\\void \mbox{\hyperlink{classR__type_1_1Registry_a1ab634e8f85d34bbf5c7ca3f07095234}{remove\+\_\+component}} (\mbox{\hyperlink{classR__type_1_1Registry_ae0a0067c8f0995a358c3597ea00bd580}{entity\+\_\+id}} id)
+\item 
+{\footnotesize template$<$typename Component $>$ }\\std\+::size\+\_\+t \mbox{\hyperlink{classR__type_1_1Registry_a6a79b29ac3dacb20d713cc8c9f963afd}{array\+\_\+size}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classR__type_1_1Entity}{Entity}} $>$ \& \mbox{\hyperlink{classR__type_1_1Registry_ace55439e5123f0a39804eb6e3ddfc069}{get\+\_\+entities}} ()
+\item 
+{\footnotesize template$<$class... component, typename Function $>$ }\\void \mbox{\hyperlink{classR__type_1_1Registry_a6c95c6fe6d60a8b07cc0d25da6c14920}{add\+\_\+standard\+\_\+system}} (Function \&\&function)
+\item 
+{\footnotesize template$<$class... component, typename Function $>$ }\\void \mbox{\hyperlink{classR__type_1_1Registry_a04b4bf99d785022164b543048be40def}{add\+\_\+standard\+\_\+system}} (Function const \&function)
+\item 
+{\footnotesize template$<$class... component, typename Function $>$ }\\void \mbox{\hyperlink{classR__type_1_1Registry_a1096ede9e8dd06b8cdb9280f2de5ecb3}{add\+\_\+event\+\_\+system}} (Function \&\&function)
+\item 
+{\footnotesize template$<$class... component, typename Function $>$ }\\void \mbox{\hyperlink{classR__type_1_1Registry_a2e327ec87c9bff200bfc2a0ce9801171}{add\+\_\+event\+\_\+system}} (Function const \&function)
+\item 
+{\footnotesize template$<$class... component, typename Function $>$ }\\void \mbox{\hyperlink{classR__type_1_1Registry_a0b4d608c09f6f06d12ad359086092e4c}{add\+\_\+rendering\+\_\+system}} (Function \&\&function)
+\item 
+{\footnotesize template$<$class... component, typename Function $>$ }\\void \mbox{\hyperlink{classR__type_1_1Registry_a53501092cfdaaafc085d28c8b34f9109}{add\+\_\+rendering\+\_\+system}} (Function const \&function)
+\item 
+void \mbox{\hyperlink{classR__type_1_1Registry_ad3bf45b6eb00ddda3e9d6fdaba2340f6}{run\+\_\+system}} (sf\+::\+Event \&event, sf\+::\+Render\+Window \&window)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::type\+\_\+index, std\+::any $>$ \mbox{\hyperlink{classR__type_1_1Registry_a33bf5e9e95cbc63f6250121f1f668f63}{\+\_\+components\+\_\+array}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::type\+\_\+index, std\+::function$<$ void(\mbox{\hyperlink{classR__type_1_1Registry_ae0a0067c8f0995a358c3597ea00bd580}{entity\+\_\+id}})$>$ $>$ \mbox{\hyperlink{classR__type_1_1Registry_a3c425db388d21549d06dccc22679d78c}{\+\_\+eraser\+\_\+array}}
+\item 
+std\+::vector$<$ std\+::function$<$ void(\mbox{\hyperlink{classR__type_1_1Registry}{Registry}} \&)$>$ $>$ \mbox{\hyperlink{classR__type_1_1Registry_aef3219551b98036f3f13b55760eba9af}{\+\_\+standard\+\_\+system}}
+\item 
+std\+::vector$<$ std\+::function$<$ void(\mbox{\hyperlink{classR__type_1_1Registry}{Registry}} \&, sf\+::\+Event)$>$ $>$ \mbox{\hyperlink{classR__type_1_1Registry_a939e1981050447e601579068353ad2b3}{\+\_\+event\+\_\+system}}
+\item 
+std\+::vector$<$ std\+::function$<$ void(\mbox{\hyperlink{classR__type_1_1Registry}{Registry}} \&, sf\+::\+Render\+Window \&)$>$ $>$ \mbox{\hyperlink{classR__type_1_1Registry_a437fad42257019e1387d00b85ff18cc5}{\+\_\+rendering\+\_\+system}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classR__type_1_1Entity}{Entity}} $>$ \mbox{\hyperlink{classR__type_1_1Registry_a1105016695b8879723cf6ded7921ce25}{\+\_\+entities}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classR__type_1_1Registry_ae0a0067c8f0995a358c3597ea00bd580}{entity\+\_\+id}} $>$ \mbox{\hyperlink{classR__type_1_1Registry_a487c329c772d618fc0dae2d518f8c541}{\+\_\+dead\+\_\+entities}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that manages entities and components in a hybrid array system. 
+
+The \mbox{\hyperlink{classR__type_1_1Registry}{Registry}} provides methods for creating and destroying entities, registering and managing components, and executing systems. It supports various systems like standard, event-\/based, and rendering systems, which can operate on entities and their components. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classR__type_1_1Registry_ae0a0067c8f0995a358c3597ea00bd580}\label{classR__type_1_1Registry_ae0a0067c8f0995a358c3597ea00bd580}} 
+\index{R\_type::Registry@{R\_type::Registry}!entity\_id@{entity\_id}}
+\index{entity\_id@{entity\_id}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{entity\_id}{entity\_id}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classR__type_1_1Registry_ae0a0067c8f0995a358c3597ea00bd580}{R\+\_\+type\+::\+Registry\+::entity\+\_\+id}} =  std\+::size\+\_\+t}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classR__type_1_1Registry_a7744c1757d27f17d221372a6b6028c97}\label{classR__type_1_1Registry_a7744c1757d27f17d221372a6b6028c97}} 
+\index{R\_type::Registry@{R\_type::Registry}!Registry@{Registry}}
+\index{Registry@{Registry}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{Registry()}{Registry()}}
+{\footnotesize\ttfamily R\+\_\+type\+::\+Registry\+::\+Registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_ad2045bc58b5d20d5f71c1c8ced946b35}\label{classR__type_1_1Registry_ad2045bc58b5d20d5f71c1c8ced946b35}} 
+\index{R\_type::Registry@{R\_type::Registry}!````~Registry@{$\sim$Registry}}
+\index{````~Registry@{$\sim$Registry}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{$\sim$Registry()}{~Registry()}}
+{\footnotesize\ttfamily R\+\_\+type\+::\+Registry\+::$\sim$\+Registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classR__type_1_1Registry_ae61a26ba9d8e20be50ee677ab6e93b90}\label{classR__type_1_1Registry_ae61a26ba9d8e20be50ee677ab6e93b90}} 
+\index{R\_type::Registry@{R\_type::Registry}!add\_component@{add\_component}}
+\index{add\_component@{add\_component}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{add\_component()}{add\_component()}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+void R\+\_\+type\+::\+Registry\+::add\+\_\+component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1Registry_ae0a0067c8f0995a358c3597ea00bd580}{entity\+\_\+id}}}]{entity,  }\item[{Component}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_a1096ede9e8dd06b8cdb9280f2de5ecb3}\label{classR__type_1_1Registry_a1096ede9e8dd06b8cdb9280f2de5ecb3}} 
+\index{R\_type::Registry@{R\_type::Registry}!add\_event\_system@{add\_event\_system}}
+\index{add\_event\_system@{add\_event\_system}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{add\_event\_system()}{add\_event\_system()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class... component, typename Function $>$ \\
+void R\+\_\+type\+::\+Registry\+::add\+\_\+event\+\_\+system (\begin{DoxyParamCaption}\item[{Function \&\&}]{function }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_a2e327ec87c9bff200bfc2a0ce9801171}\label{classR__type_1_1Registry_a2e327ec87c9bff200bfc2a0ce9801171}} 
+\index{R\_type::Registry@{R\_type::Registry}!add\_event\_system@{add\_event\_system}}
+\index{add\_event\_system@{add\_event\_system}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{add\_event\_system()}{add\_event\_system()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class... component, typename Function $>$ \\
+void R\+\_\+type\+::\+Registry\+::add\+\_\+event\+\_\+system (\begin{DoxyParamCaption}\item[{Function const \&}]{function }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_a0b4d608c09f6f06d12ad359086092e4c}\label{classR__type_1_1Registry_a0b4d608c09f6f06d12ad359086092e4c}} 
+\index{R\_type::Registry@{R\_type::Registry}!add\_rendering\_system@{add\_rendering\_system}}
+\index{add\_rendering\_system@{add\_rendering\_system}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{add\_rendering\_system()}{add\_rendering\_system()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class... component, typename Function $>$ \\
+void R\+\_\+type\+::\+Registry\+::add\+\_\+rendering\+\_\+system (\begin{DoxyParamCaption}\item[{Function \&\&}]{function }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_a53501092cfdaaafc085d28c8b34f9109}\label{classR__type_1_1Registry_a53501092cfdaaafc085d28c8b34f9109}} 
+\index{R\_type::Registry@{R\_type::Registry}!add\_rendering\_system@{add\_rendering\_system}}
+\index{add\_rendering\_system@{add\_rendering\_system}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{add\_rendering\_system()}{add\_rendering\_system()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class... component, typename Function $>$ \\
+void R\+\_\+type\+::\+Registry\+::add\+\_\+rendering\+\_\+system (\begin{DoxyParamCaption}\item[{Function const \&}]{function }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_a6c95c6fe6d60a8b07cc0d25da6c14920}\label{classR__type_1_1Registry_a6c95c6fe6d60a8b07cc0d25da6c14920}} 
+\index{R\_type::Registry@{R\_type::Registry}!add\_standard\_system@{add\_standard\_system}}
+\index{add\_standard\_system@{add\_standard\_system}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{add\_standard\_system()}{add\_standard\_system()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class... component, typename Function $>$ \\
+void R\+\_\+type\+::\+Registry\+::add\+\_\+standard\+\_\+system (\begin{DoxyParamCaption}\item[{Function \&\&}]{function }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_a04b4bf99d785022164b543048be40def}\label{classR__type_1_1Registry_a04b4bf99d785022164b543048be40def}} 
+\index{R\_type::Registry@{R\_type::Registry}!add\_standard\_system@{add\_standard\_system}}
+\index{add\_standard\_system@{add\_standard\_system}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{add\_standard\_system()}{add\_standard\_system()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class... component, typename Function $>$ \\
+void R\+\_\+type\+::\+Registry\+::add\+\_\+standard\+\_\+system (\begin{DoxyParamCaption}\item[{Function const \&}]{function }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_a6a79b29ac3dacb20d713cc8c9f963afd}\label{classR__type_1_1Registry_a6a79b29ac3dacb20d713cc8c9f963afd}} 
+\index{R\_type::Registry@{R\_type::Registry}!array\_size@{array\_size}}
+\index{array\_size@{array\_size}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{array\_size()}{array\_size()}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+std\+::size\+\_\+t R\+\_\+type\+::\+Registry\+::array\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_ae7a6739f36355a70d9a371ed15d15874}\label{classR__type_1_1Registry_ae7a6739f36355a70d9a371ed15d15874}} 
+\index{R\_type::Registry@{R\_type::Registry}!entity\_from\_index@{entity\_from\_index}}
+\index{entity\_from\_index@{entity\_from\_index}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{entity\_from\_index()}{entity\_from\_index()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classR__type_1_1Entity}{Entity}} R\+\_\+type\+::\+Registry\+::entity\+\_\+from\+\_\+index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1Registry_ae0a0067c8f0995a358c3597ea00bd580}{entity\+\_\+id}}}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_a96616521d94c8442b0d1476357272f09}\label{classR__type_1_1Registry_a96616521d94c8442b0d1476357272f09}} 
+\index{R\_type::Registry@{R\_type::Registry}!get\_component@{get\_component}}
+\index{get\_component@{get\_component}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{get\_component()}{get\_component()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Component $>$ \\
+std\+::optional$<$Component$>$\& R\+\_\+type\+::\+Registry\+::get\+\_\+component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1Registry_ae0a0067c8f0995a358c3597ea00bd580}{entity\+\_\+id}}}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_ad26f1d046a58254b41573e315b9deddd}\label{classR__type_1_1Registry_ad26f1d046a58254b41573e315b9deddd}} 
+\index{R\_type::Registry@{R\_type::Registry}!get\_component@{get\_component}}
+\index{get\_component@{get\_component}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{get\_component()}{get\_component()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Component $>$ \\
+std\+::optional$<$Component$>$ const R\+\_\+type\+::\+Registry\+::get\+\_\+component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1Registry_ae0a0067c8f0995a358c3597ea00bd580}{entity\+\_\+id}}}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_ace55439e5123f0a39804eb6e3ddfc069}\label{classR__type_1_1Registry_ace55439e5123f0a39804eb6e3ddfc069}} 
+\index{R\_type::Registry@{R\_type::Registry}!get\_entities@{get\_entities}}
+\index{get\_entities@{get\_entities}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{get\_entities()}{get\_entities()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classR__type_1_1Entity}{Entity}}$>$\& R\+\_\+type\+::\+Registry\+::get\+\_\+entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_ad9fb15bd873064cc18daf122ab248be7}\label{classR__type_1_1Registry_ad9fb15bd873064cc18daf122ab248be7}} 
+\index{R\_type::Registry@{R\_type::Registry}!get\_registry@{get\_registry}}
+\index{get\_registry@{get\_registry}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{get\_registry()}{get\_registry()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1hybrid__array}{hybrid\+\_\+array}}$<$Component$>$\& R\+\_\+type\+::\+Registry\+::get\+\_\+registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_ac764a9038e7ee13fdc9ed536d5413e91}\label{classR__type_1_1Registry_ac764a9038e7ee13fdc9ed536d5413e91}} 
+\index{R\_type::Registry@{R\_type::Registry}!get\_registry@{get\_registry}}
+\index{get\_registry@{get\_registry}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{get\_registry()}{get\_registry()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1hybrid__array}{hybrid\+\_\+array}}$<$Component$>$ const\& R\+\_\+type\+::\+Registry\+::get\+\_\+registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_adeaf8614dfb2e87dcc3d84f8291b8a0b}\label{classR__type_1_1Registry_adeaf8614dfb2e87dcc3d84f8291b8a0b}} 
+\index{R\_type::Registry@{R\_type::Registry}!init\_compact\_array@{init\_compact\_array}}
+\index{init\_compact\_array@{init\_compact\_array}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{init\_compact\_array()}{init\_compact\_array()}}
+{\footnotesize\ttfamily template$<$class Component $>$ \\
+void R\+\_\+type\+::\+Registry\+::init\+\_\+compact\+\_\+array (\begin{DoxyParamCaption}\item[{std\+::type\+\_\+index}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_a620015a7c397c8e3f3f7af3072502be7}\label{classR__type_1_1Registry_a620015a7c397c8e3f3f7af3072502be7}} 
+\index{R\_type::Registry@{R\_type::Registry}!init\_sparse\_array@{init\_sparse\_array}}
+\index{init\_sparse\_array@{init\_sparse\_array}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{init\_sparse\_array()}{init\_sparse\_array()}}
+{\footnotesize\ttfamily template$<$class Component $>$ \\
+void R\+\_\+type\+::\+Registry\+::init\+\_\+sparse\+\_\+array (\begin{DoxyParamCaption}\item[{std\+::type\+\_\+index}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_ae0c21a1113d925670d56122bb48722ae}\label{classR__type_1_1Registry_ae0c21a1113d925670d56122bb48722ae}} 
+\index{R\_type::Registry@{R\_type::Registry}!kill\_entity@{kill\_entity}}
+\index{kill\_entity@{kill\_entity}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{kill\_entity()}{kill\_entity()}}
+{\footnotesize\ttfamily void R\+\_\+type\+::\+Registry\+::kill\+\_\+entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1Registry_ae0a0067c8f0995a358c3597ea00bd580}{entity\+\_\+id}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_a2fbaaa7263a2b71140b2f80969ddf77f}\label{classR__type_1_1Registry_a2fbaaa7263a2b71140b2f80969ddf77f}} 
+\index{R\_type::Registry@{R\_type::Registry}!register\_component@{register\_component}}
+\index{register\_component@{register\_component}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{register\_component()}{register\_component()}}
+{\footnotesize\ttfamily template$<$class Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1hybrid__array}{hybrid\+\_\+array}}$<$Component$>$\& R\+\_\+type\+::\+Registry\+::register\+\_\+component (\begin{DoxyParamCaption}\item[{std\+::string}]{fact,  }\item[{bool}]{is\+\_\+common = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_a1ab634e8f85d34bbf5c7ca3f07095234}\label{classR__type_1_1Registry_a1ab634e8f85d34bbf5c7ca3f07095234}} 
+\index{R\_type::Registry@{R\_type::Registry}!remove\_component@{remove\_component}}
+\index{remove\_component@{remove\_component}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{remove\_component()}{remove\_component()}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+void R\+\_\+type\+::\+Registry\+::remove\+\_\+component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1Registry_ae0a0067c8f0995a358c3597ea00bd580}{entity\+\_\+id}}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_ad3bf45b6eb00ddda3e9d6fdaba2340f6}\label{classR__type_1_1Registry_ad3bf45b6eb00ddda3e9d6fdaba2340f6}} 
+\index{R\_type::Registry@{R\_type::Registry}!run\_system@{run\_system}}
+\index{run\_system@{run\_system}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{run\_system()}{run\_system()}}
+{\footnotesize\ttfamily void R\+\_\+type\+::\+Registry\+::run\+\_\+system (\begin{DoxyParamCaption}\item[{sf\+::\+Event \&}]{event,  }\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_a407cb16309fb851836b56450807d3762}\label{classR__type_1_1Registry_a407cb16309fb851836b56450807d3762}} 
+\index{R\_type::Registry@{R\_type::Registry}!spawn\_entity@{spawn\_entity}}
+\index{spawn\_entity@{spawn\_entity}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{spawn\_entity()}{spawn\_entity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classR__type_1_1Entity}{Entity}} R\+\_\+type\+::\+Registry\+::spawn\+\_\+entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classR__type_1_1Registry_a33bf5e9e95cbc63f6250121f1f668f63}\label{classR__type_1_1Registry_a33bf5e9e95cbc63f6250121f1f668f63}} 
+\index{R\_type::Registry@{R\_type::Registry}!\_components\_array@{\_components\_array}}
+\index{\_components\_array@{\_components\_array}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{\_components\_array}{\_components\_array}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::type\+\_\+index, std\+::any$>$ R\+\_\+type\+::\+Registry\+::\+\_\+components\+\_\+array\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_a487c329c772d618fc0dae2d518f8c541}\label{classR__type_1_1Registry_a487c329c772d618fc0dae2d518f8c541}} 
+\index{R\_type::Registry@{R\_type::Registry}!\_dead\_entities@{\_dead\_entities}}
+\index{\_dead\_entities@{\_dead\_entities}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{\_dead\_entities}{\_dead\_entities}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classR__type_1_1Registry_ae0a0067c8f0995a358c3597ea00bd580}{entity\+\_\+id}}$>$ R\+\_\+type\+::\+Registry\+::\+\_\+dead\+\_\+entities\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_a1105016695b8879723cf6ded7921ce25}\label{classR__type_1_1Registry_a1105016695b8879723cf6ded7921ce25}} 
+\index{R\_type::Registry@{R\_type::Registry}!\_entities@{\_entities}}
+\index{\_entities@{\_entities}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{\_entities}{\_entities}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classR__type_1_1Entity}{Entity}}$>$ R\+\_\+type\+::\+Registry\+::\+\_\+entities\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_a3c425db388d21549d06dccc22679d78c}\label{classR__type_1_1Registry_a3c425db388d21549d06dccc22679d78c}} 
+\index{R\_type::Registry@{R\_type::Registry}!\_eraser\_array@{\_eraser\_array}}
+\index{\_eraser\_array@{\_eraser\_array}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{\_eraser\_array}{\_eraser\_array}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::type\+\_\+index, std\+::function$<$void(\mbox{\hyperlink{classR__type_1_1Registry_ae0a0067c8f0995a358c3597ea00bd580}{entity\+\_\+id}})$>$ $>$ R\+\_\+type\+::\+Registry\+::\+\_\+eraser\+\_\+array\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_a939e1981050447e601579068353ad2b3}\label{classR__type_1_1Registry_a939e1981050447e601579068353ad2b3}} 
+\index{R\_type::Registry@{R\_type::Registry}!\_event\_system@{\_event\_system}}
+\index{\_event\_system@{\_event\_system}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{\_event\_system}{\_event\_system}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::function$<$void(\mbox{\hyperlink{classR__type_1_1Registry}{Registry}}\&, sf\+::\+Event)$>$ $>$ R\+\_\+type\+::\+Registry\+::\+\_\+event\+\_\+system\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_a437fad42257019e1387d00b85ff18cc5}\label{classR__type_1_1Registry_a437fad42257019e1387d00b85ff18cc5}} 
+\index{R\_type::Registry@{R\_type::Registry}!\_rendering\_system@{\_rendering\_system}}
+\index{\_rendering\_system@{\_rendering\_system}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{\_rendering\_system}{\_rendering\_system}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::function$<$void(\mbox{\hyperlink{classR__type_1_1Registry}{Registry}}\&, sf\+::\+Render\+Window\&)$>$ $>$ R\+\_\+type\+::\+Registry\+::\+\_\+rendering\+\_\+system\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classR__type_1_1Registry_aef3219551b98036f3f13b55760eba9af}\label{classR__type_1_1Registry_aef3219551b98036f3f13b55760eba9af}} 
+\index{R\_type::Registry@{R\_type::Registry}!\_standard\_system@{\_standard\_system}}
+\index{\_standard\_system@{\_standard\_system}!R\_type::Registry@{R\_type::Registry}}
+\doxysubsubsection{\texorpdfstring{\_standard\_system}{\_standard\_system}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::function$<$void(\mbox{\hyperlink{classR__type_1_1Registry}{Registry}}\&)$>$ $>$ R\+\_\+type\+::\+Registry\+::\+\_\+standard\+\_\+system\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/teddsk/\+B-\/\+CPP-\/500-\/\+COT-\/5-\/1-\/rtype-\/ange-\/marie.\+dossou/include/nova\+\_\+engine/core/\mbox{\hyperlink{register_8hpp}{register.\+hpp}}\end{DoxyCompactItemize}

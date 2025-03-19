@@ -1,0 +1,144 @@
+{
+    "entities": [
+      "entity",
+      "entity1",
+      "entity2",
+      "entity_up",
+      "entity_down",
+      "entity_left",
+      "entity_right",
+      "entity_shoot",
+      "entity_ai",
+      "text_up",
+      "text_down",
+      "text_left",
+      "text_right",
+      "text_shoot",
+      "text_ai",
+      "entity_name",
+      "entity_plus",
+      "entity_moins",
+      "volume_bar",
+      "inputs",
+      "volume",
+      "volume_rect",      
+      "entity_back"
+    ],
+    "sprites": [
+      { "entity": "entity", "asset": "back1", "scale": {"x": 1, "y": 1} },
+      { "entity": "entity1", "asset": "back2", "scale": {"x": 1, "y": 1} },
+      { "entity": "entity2", "asset": "back3", "scale": {"x": 1, "y": 1} },
+      { "entity": "entity_up", "asset": "snack", "scale": {"x": 1, "y": 1}},
+      { "entity": "entity_down", "asset": "snack", "scale": {"x": 1, "y": 1}},
+      { "entity": "entity_left", "asset": "snack", "scale": {"x": 1, "y": 1}},
+      { "entity": "entity_right", "asset": "snack", "scale": {"x": 1, "y": 1}},
+      { "entity": "entity_shoot", "asset": "snack", "scale": {"x": 1, "y": 1}},
+      { "entity": "entity_ai", "asset": "snack", "scale": {"x": 1, "y": 1}},
+      { "entity": "entity_plus", "asset": "plus", "scale": {"x": 1.5, "y": 1.5}},
+      { "entity": "entity_moins", "asset": "moins", "scale": {"x": 1.5, "y": 1.5}},
+      { "entity": "volume_bar", "asset": "snack", "scale": {"x": 0.7, "y": 0.7}},
+      { "entity": "volume_rect", "asset": "volume rect", "scale": {"x": 0.7, "y": 0.4}},
+      {
+        "entity": "entity_back",
+        "asset": "undo",
+        "scale": {"x": 1.5, "y": 1.5}
+      }
+    ],
+    "spritesheets": [],
+    "texts": [
+      { "entity": "entity_name", "content": "options", "font": "sec_font", "color": {"r": 255, "g": 255, "b": 255}, "size": 70 },
+      { "entity": "text_up", "content": "click to edit up move (Key up)", "font": "main_font", "color": {"r": 0, "g": 0, "b": 0}, "size": 20 },
+      { "entity": "text_down", "content": "click to edit down move (key down)", "font": "main_font", "color": {"r": 0, "g": 0, "b": 0}, "size": 20 },
+      { "entity": "text_left", "content": "click to edit left move (key left)", "font": "main_font", "color": {"r": 0, "g": 0, "b": 0}, "size": 20 },
+      { "entity": "text_right", "content": "click to edit right move (key right)", "font": "main_font", "color": {"r": 0, "g": 0, "b": 0}, "size": 20 },
+      { "entity": "text_shoot", "content": "click to edit shoot move (key A)", "font": "main_font", "color": {"r": 0, "g": 0, "b": 0}, "size": 20 },
+      { "entity": "text_ai", "content": "click to edit auto pilot (key Space)", "font": "main_font", "color": {"r": 0, "g": 0, "b": 0}, "size": 20 },
+      { "entity": "inputs", "content": "input remap", "font": "sec_font", "color": {"r": 255, "g": 255, "b": 255}, "size": 30 },
+      { "entity": "volume", "content": "volume", "font": "sec_font", "color": {"r": 255, "g": 255, "b": 255}, "size": 30 }
+    ],
+    "positions": [
+      { "entity": "entity", "x": 5, "y": 5 },
+      { "entity": "entity1", "x": 1905, "y": 5 },
+      { "entity": "entity2", "x": 3805, "y": 5 },
+      { "entity": "entity_name", "x": 650, "y": 15 },
+      { "entity": "volume", "x": 790, "y": 200 },
+      { "entity": "entity_moins", "x": 600, "y": 300 },
+      { "entity": "volume_bar", "x": 725, "y": 295 },
+      { "entity": "volume_rect", "x": 748, "y": 303 },
+      { "entity": "entity_plus", "x": 1220, "y": 300 },
+      { "entity": "inputs", "x": 750, "y": 400 },
+      { "entity": "entity_up", "x": 260, "y": 500 },
+      { "entity": "entity_down", "x": 1060, "y": 500 },
+      { "entity": "entity_left", "x": 260, "y": 700 },
+      { "entity": "entity_right", "x": 1060, "y": 700 },
+      { "entity": "entity_shoot", "x": 260, "y": 850 },
+      { "entity": "entity_ai", "x": 1060, "y": 850 },
+      { "entity": "text_up", "x": 285, "y": 510 },
+      { "entity": "text_down", "x": 1085, "y": 510 },
+      { "entity": "text_left", "x": 285, "y": 710 },
+      { "entity": "text_right", "x": 1085, "y": 710 },
+      { "entity": "text_shoot", "x": 285, "y": 860 },
+      { "entity": "text_ai", "x": 1085, "y": 860 },
+      { "entity": "entity_back", "x": 1800, "y": 20 }
+    ],
+    "clickables": [
+      {
+        "entity": "entity_back",
+        "name": "back"
+      },
+      {
+        "entity": "entity_plus",
+        "name": "volume_plus"
+      },
+      {
+        "entity": "entity_moins",
+        "name": "volume_minus"
+      },
+      {
+        "entity": "entity_up",
+        "name": "up_key"
+      },
+      {
+        "entity": "entity_down",
+        "name": "down_key"
+      },
+      {
+        "entity": "entity_left",
+        "name": "left_key"
+      },
+      {
+        "entity": "entity_shoot",
+        "name": "shoot_key"
+      },
+      {
+        "entity": "entity_ai",
+        "name": "auto_key"
+      },
+      {
+        "entity": "entity_right",
+        "name": "right_key"
+      }
+    ],
+    "colliders": [
+      { "entity": "entity_plus", "width": 100, "height": 100 },
+      { "entity": "entity_moins", "width": 100, "height": 100 },
+      { "entity": "entity_up", "width": 587, "height": 68 },
+      { "entity": "entity_down", "width": 587, "height": 68 },
+      { "entity": "entity_left", "width": 587, "height": 68 },
+      { "entity": "entity_right", "width": 587, "height": 68 },
+      { "entity": "entity_shoot", "width": 587, "height": 68 },
+      { "entity": "entity_ai", "width": 587, "height": 68 },
+      { "entity": "entity_back", "width": 100, "height": 100}
+    ],
+    "sounds": [],
+    "inputs": [],
+    "rectangles": [],
+    "circles": [],
+    "velocities": [
+      { "entity": "entity", "x": 0.03, "y": 0, "dir_x": -1, "dir_y": 1 },
+      { "entity": "entity1", "x": 0.03, "y": 0, "dir_x": -1, "dir_y": 1 },
+      { "entity": "entity2", "x": 0.03, "y": 0, "dir_x": -1, "dir_y": 1 }
+    ],
+    "snacks": []
+  }
+  

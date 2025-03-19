@@ -1,0 +1,1 @@
+Contains core functionality header files essential for the application.

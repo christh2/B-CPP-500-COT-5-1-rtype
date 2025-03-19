@@ -1,0 +1,72 @@
+{
+    "entities": [
+      "entity",
+      "entity1",
+      "entity2",
+      "selector",
+      "entity_start",
+      "entity_option",
+      "entity_story",
+      "entity_quit",
+      "monster_anim",
+      "leader",
+      "inventory",
+      "entity_name"
+    ],
+    "sprites": [
+      { "entity": "entity", "asset": "back1", "scale": {"x": 1, "y": 1} },
+      { "entity": "entity1", "asset": "back2", "scale": {"x": 1, "y": 1} },
+      { "entity": "entity2", "asset": "back3", "scale": {"x": 1, "y": 1} },
+      { "entity": "entity_start", "asset": "start hover", "scale": {"x": 1.1, "y": 1}},
+      { "entity": "entity_story", "asset": "story", "scale": {"x": 1, "y": 1}},
+      { "entity": "entity_option", "asset": "option", "scale": {"x": 1, "y": 1}},
+      { "entity": "entity_quit", "asset": "quit", "scale": {"x": 1, "y": 1}},
+      { "entity": "leader", "asset": "leader", "scale": {"x": 1.5, "y": 1.5}},
+      { "entity": "inventory", "asset": "buy", "scale": {"x": 1.5, "y": 1.5}},
+      { "entity": "monster_anim", "asset": "dobk", "scale": {"x": 1, "y": 1}}
+    ],
+    "spritesheets": [
+      { "entity": "selector", "asset": "hero", "scale": {"x": 1.5, "y": 1.5}, "frame": 800, "x": 0, "y": 0, "w": 33, "h": 20, "nb_col": 2, "nb_row": 1}
+    ],
+    "texts": [
+      { "entity": "entity_name", "content": "R type", "font": "sec_font", "color": {"r": 255, "g": 255, "b": 255}, "size": 100 }
+    ],
+    "positions": [
+      { "entity": "entity", "x": 5, "y": 5 },
+      { "entity": "entity1", "x": 1905, "y": 5 },
+      { "entity": "entity2", "x": 3805, "y": 5 },
+      { "entity": "entity_start", "x": 200, "y": 300 },
+      { "entity": "selector", "x": 120, "y": 320 },
+      { "entity": "entity_option", "x": 200, "y": 400 },
+      { "entity": "entity_story", "x": 200, "y": 500 },
+      { "entity": "entity_quit", "x": 200, "y": 600 },
+      { "entity": "leader", "x": 1700, "y": 15 },
+      { "entity": "inventory", "x": 1800, "y": 15 },
+      { "entity": "entity_name", "x": 650, "y": 20 }
+    ],
+    "clickables": [
+      {
+        "entity": "inventory",
+        "name": "buy"
+      },
+      {
+        "entity": "leader",
+        "name": "leader"
+      }
+    ],
+    "colliders": [
+      { "entity": "leader", "width": 64, "height": 64 },
+      { "entity": "inventory", "width": 64, "height": 64 }
+    ],
+    "sounds": [],
+    "inputs": [],
+    "rectangles": [],
+    "circles": [],
+    "velocities": [
+      { "entity": "entity", "x": 0.03, "y": 0, "dir_x": -1, "dir_y": 1 },
+      { "entity": "entity1", "x": 0.03, "y": 0, "dir_x": -1, "dir_y": 1 },
+      { "entity": "entity2", "x": 0.03, "y": 0, "dir_x": -1, "dir_y": 1 }
+    ],
+    "snacks": []
+  }
+  

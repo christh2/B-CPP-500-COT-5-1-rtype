@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['score_5fcomponent_2ehpp_146',['score_component.hpp',['../d6/d7c/score__component_8hpp.html',1,'']]],
+  ['score_5ft_147',['score_t',['../d6/dda/namespaceR__type.html#ac7ffe0d1b98bf0297fb1d28a5b7017b9',1,'R_type']]],
+  ['server_2ecpp_148',['server.cpp',['../df/dd7/server_8cpp.html',1,'']]],
+  ['server_2ehpp_149',['server.hpp',['../df/d0a/server_8hpp.html',1,'']]],
+  ['size_150',['size',['../da/d4c/classR__type_1_1SparseArray.html#a739ef66590e9164c04754e46fce0c1ae',1,'R_type::SparseArray::size()'],['../db/d13/classR__type_1_1hybrid__array.html#ac51169ca2bd01abc23d48a72449d0059',1,'R_type::hybrid_array::size()'],['../d8/d1f/classR__type_1_1CompactArray.html#aefbf3e3cb9b594f366d0d62be6748bbb',1,'R_type::CompactArray::size()']]],
+  ['size_5ftype_151',['size_type',['../da/d4c/classR__type_1_1SparseArray.html#af5c52d5e6f8a6bbabc8ef26b7c67060a',1,'R_type::SparseArray::size_type()'],['../d8/d1f/classR__type_1_1CompactArray.html#a527af912f5a471d20bd6785afc480154',1,'R_type::CompactArray::size_type()']]],
+  ['sound_5ffile_152',['sound_file',['../d3/d0a/structsound__t.html#a9188a1832fd9bc5352181e2c7719129e',1,'sound_t']]],
+  ['sound_5ffiles_153',['sound_files',['../dd/d6d/structplaylist__t.html#abcfcffad60787ce841bcfc055e1c5e88',1,'playlist_t']]],
+  ['sound_5ft_154',['sound_t',['../d3/d0a/structsound__t.html#a29b02651e7f4a246efa609248cbf03dd',1,'sound_t::sound_t()'],['../dd/d60/soundComponent_8hpp.html#acdf4f2a5232fdeafa5ef6e2bd96cd89f',1,'sound_t():&#160;soundComponent.hpp'],['../d3/d0a/structsound__t.html',1,'sound_t']]],
+  ['soundcomponent_2ecpp_155',['soundComponent.cpp',['../d5/d58/soundComponent_8cpp.html',1,'']]],
+  ['soundcomponent_2ehpp_156',['soundComponent.hpp',['../dd/d60/soundComponent_8hpp.html',1,'']]],
+  ['sparse_5farray_2ehpp_157',['sparse_array.hpp',['../db/d10/sparse__array_8hpp.html',1,'']]],
+  ['sparsearray_158',['SparseArray',['../da/d4c/classR__type_1_1SparseArray.html',1,'R_type::SparseArray&lt; Component &gt;'],['../da/d4c/classR__type_1_1SparseArray.html#aceb874ef51e7791e65b62a28f340e2ab',1,'R_type::SparseArray::SparseArray()=default'],['../da/d4c/classR__type_1_1SparseArray.html#a1386ce7e4b175bd65ee30319a5fb78d7',1,'R_type::SparseArray::SparseArray(SparseArray const &amp;vlue)'],['../da/d4c/classR__type_1_1SparseArray.html#a76a6a88b483e999951f597f8dd732900',1,'R_type::SparseArray::SparseArray(SparseArray const &amp;&amp;vlue) noexcept']]],
+  ['spawn_5fentity_159',['spawn_entity',['../da/dc7/classR__type_1_1Registry.html#a407cb16309fb851836b56450807d3762',1,'R_type::Registry']]],
+  ['speed_160',['speed',['../da/d64/structR__type_1_1gravity__t.html#aeed41aa5bb2cab3b37d02496f69a9721',1,'R_type::gravity_t']]],
+  ['speed_5fx_161',['speed_x',['../d2/ded/structR__type_1_1velocity__t.html#ab2e820da932767db7a036b37967364d9',1,'R_type::velocity_t']]],
+  ['speed_5fy_162',['speed_y',['../d2/ded/structR__type_1_1velocity__t.html#a6225aee1f7c9b35026d01de4fa1a48c7',1,'R_type::velocity_t']]],
+  ['sprite_163',['sprite',['../df/d87/structsprite__comp__t.html#a4985fc81775ddcd1ce635e7b3192abad',1,'sprite_comp_t']]],
+  ['sprite_5fcomp_5ft_164',['sprite_comp_t',['../df/d87/structsprite__comp__t.html#a74ed2691b7a7663bc66a1fd73504d88f',1,'sprite_comp_t::sprite_comp_t()'],['../df/d87/structsprite__comp__t.html',1,'sprite_comp_t'],['../df/d2d/SpriteComponent_8hpp.html#a0416dba4cab57bca86d4559d396bf12f',1,'sprite_comp_t():&#160;SpriteComponent.hpp']]],
+  ['spritecomponent_2ecpp_165',['SpriteComponent.cpp',['../d4/d52/SpriteComponent_8cpp.html',1,'']]],
+  ['spritecomponent_2ehpp_166',['SpriteComponent.hpp',['../df/d2d/SpriteComponent_8hpp.html',1,'']]],
+  ['system_2ehpp_167',['system.hpp',['../dd/d90/system_8hpp.html',1,'']]]
+];

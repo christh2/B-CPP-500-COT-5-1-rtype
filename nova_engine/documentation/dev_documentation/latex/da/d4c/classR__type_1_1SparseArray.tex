@@ -1,0 +1,322 @@
+\hypertarget{classR__type_1_1SparseArray}{}\doxysection{R\+\_\+type\+::Sparse\+Array$<$ Component $>$ Class Template Reference}
+\label{classR__type_1_1SparseArray}\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+
+
+A Sparse array class to store sparse components efficiently.  
+
+
+
+
+{\ttfamily \#include $<$sparse\+\_\+array.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classR__type_1_1SparseArray_aafec7be4aaea86fdc100a07045087450}{value\+\_\+type}} = std\+::optional$<$ Component $>$
+\item 
+using \mbox{\hyperlink{classR__type_1_1SparseArray_a70bde2c3b514095faa9f8547264544cf}{reference\+\_\+type}} = \mbox{\hyperlink{classR__type_1_1SparseArray_aafec7be4aaea86fdc100a07045087450}{value\+\_\+type}} \&
+\item 
+using \mbox{\hyperlink{classR__type_1_1SparseArray_a542d6669519db465e236818241f38524}{const\+\_\+reference\+\_\+type}} = const \mbox{\hyperlink{classR__type_1_1SparseArray_aafec7be4aaea86fdc100a07045087450}{value\+\_\+type}} \&
+\item 
+using \mbox{\hyperlink{classR__type_1_1SparseArray_a15596b6bd717979a3a43c97bbca680db}{container\+\_\+t}} = std\+::vector$<$ \mbox{\hyperlink{classR__type_1_1SparseArray_aafec7be4aaea86fdc100a07045087450}{value\+\_\+type}} $>$
+\item 
+using \mbox{\hyperlink{classR__type_1_1SparseArray_af5c52d5e6f8a6bbabc8ef26b7c67060a}{size\+\_\+type}} = typename container\+\_\+t\+::size\+\_\+type
+\item 
+using \mbox{\hyperlink{classR__type_1_1SparseArray_a4d3a28722ca6c5be164bcfebd1697160}{iterator}} = typename container\+\_\+t\+::iterator
+\item 
+using \mbox{\hyperlink{classR__type_1_1SparseArray_a99f44655998b617b02fb00c1133a2745}{const\+\_\+iterator}} = typename container\+\_\+t\+::const\+\_\+iterator
+\item 
+using \mbox{\hyperlink{classR__type_1_1SparseArray_ac0115e52c12b496beae0727b2c280280}{allocator}} = typename std\+::allocator$<$ Component $>$
+\item 
+using \mbox{\hyperlink{classR__type_1_1SparseArray_a37e7994f6e03e555c37183a30a1b6558}{allocator\+\_\+traits}} = typename std\+::allocator\+\_\+traits$<$ \mbox{\hyperlink{classR__type_1_1SparseArray_ac0115e52c12b496beae0727b2c280280}{allocator}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classR__type_1_1SparseArray_aceb874ef51e7791e65b62a28f340e2ab}{Sparse\+Array}} ()=default
+\item 
+\mbox{\hyperlink{classR__type_1_1SparseArray_a1386ce7e4b175bd65ee30319a5fb78d7}{Sparse\+Array}} (\mbox{\hyperlink{classR__type_1_1SparseArray}{Sparse\+Array}} const \&vlue)
+\item 
+\mbox{\hyperlink{classR__type_1_1SparseArray_a76a6a88b483e999951f597f8dd732900}{Sparse\+Array}} (\mbox{\hyperlink{classR__type_1_1SparseArray}{Sparse\+Array}} const \&\&vlue) noexcept
+\item 
+\mbox{\hyperlink{classR__type_1_1SparseArray_addab15b02f423561bc3443af8c36f7f4}{$\sim$\+Sparse\+Array}} ()=default
+\item 
+\mbox{\hyperlink{classR__type_1_1SparseArray}{Sparse\+Array}} \& \mbox{\hyperlink{classR__type_1_1SparseArray_a7641a5dd07e21b4b46a2882052a146b5}{operator=}} (\mbox{\hyperlink{classR__type_1_1SparseArray}{Sparse\+Array}} const \&vlue)
+\item 
+\mbox{\hyperlink{classR__type_1_1SparseArray}{Sparse\+Array}} \& \mbox{\hyperlink{classR__type_1_1SparseArray_a5cecec6bc7beb33f04a997afc7974253}{operator=}} (\mbox{\hyperlink{classR__type_1_1SparseArray}{Sparse\+Array}} \&\&vlue) noexcept
+\item 
+\mbox{\hyperlink{classR__type_1_1SparseArray_a70bde2c3b514095faa9f8547264544cf}{reference\+\_\+type}} \mbox{\hyperlink{classR__type_1_1SparseArray_aa32773c6455fcee5b155f805b96c8d22}{operator\mbox{[}$\,$\mbox{]}}} (std\+::size\+\_\+t index)
+\item 
+\mbox{\hyperlink{classR__type_1_1SparseArray_aafec7be4aaea86fdc100a07045087450}{value\+\_\+type}} \mbox{\hyperlink{classR__type_1_1SparseArray_ae42c2631632c1ecd569d5bc6522b6df4}{at}} (std\+::size\+\_\+t index)
+\item 
+\mbox{\hyperlink{classR__type_1_1SparseArray_a542d6669519db465e236818241f38524}{const\+\_\+reference\+\_\+type}} \mbox{\hyperlink{classR__type_1_1SparseArray_a5ce02b72d71a8ad00d45cb5549a9d856}{operator\mbox{[}$\,$\mbox{]}}} (std\+::size\+\_\+t index) const
+\item 
+\mbox{\hyperlink{classR__type_1_1SparseArray_a4d3a28722ca6c5be164bcfebd1697160}{iterator}} \mbox{\hyperlink{classR__type_1_1SparseArray_aa53be8ce9d1ed979d00dd3b92df22ace}{begin}} ()
+\item 
+\mbox{\hyperlink{classR__type_1_1SparseArray_a99f44655998b617b02fb00c1133a2745}{const\+\_\+iterator}} \mbox{\hyperlink{classR__type_1_1SparseArray_a7d4fea96c175193b024b108968174182}{begin}} () const
+\item 
+\mbox{\hyperlink{classR__type_1_1SparseArray_a99f44655998b617b02fb00c1133a2745}{const\+\_\+iterator}} \mbox{\hyperlink{classR__type_1_1SparseArray_a09a5a92e5670b9fc4f680ac42cabd11a}{cbegin}} () const
+\item 
+\mbox{\hyperlink{classR__type_1_1SparseArray_a4d3a28722ca6c5be164bcfebd1697160}{iterator}} \mbox{\hyperlink{classR__type_1_1SparseArray_a77fbd4c7d31a5ec222960cc5b7c3039a}{end}} ()
+\item 
+\mbox{\hyperlink{classR__type_1_1SparseArray_a99f44655998b617b02fb00c1133a2745}{const\+\_\+iterator}} \mbox{\hyperlink{classR__type_1_1SparseArray_a8ebab4ac76e338dd38d797c837329afa}{end}} () const
+\item 
+\mbox{\hyperlink{classR__type_1_1SparseArray_a99f44655998b617b02fb00c1133a2745}{const\+\_\+iterator}} \mbox{\hyperlink{classR__type_1_1SparseArray_ac822f39a6b0e5f2933f9dabda9c5b933}{cend}} () const
+\item 
+\mbox{\hyperlink{classR__type_1_1SparseArray_af5c52d5e6f8a6bbabc8ef26b7c67060a}{size\+\_\+type}} \mbox{\hyperlink{classR__type_1_1SparseArray_a739ef66590e9164c04754e46fce0c1ae}{size}} () const
+\item 
+\mbox{\hyperlink{classR__type_1_1SparseArray_a70bde2c3b514095faa9f8547264544cf}{reference\+\_\+type}} \mbox{\hyperlink{classR__type_1_1SparseArray_a20c57f16d770459c6af6cdb2e2feac8d}{insert\+\_\+at}} (\mbox{\hyperlink{classR__type_1_1SparseArray_af5c52d5e6f8a6bbabc8ef26b7c67060a}{size\+\_\+type}} pos, Component const \&component)
+\item 
+\mbox{\hyperlink{classR__type_1_1SparseArray_a70bde2c3b514095faa9f8547264544cf}{reference\+\_\+type}} \mbox{\hyperlink{classR__type_1_1SparseArray_ad219311ad56ef4a987b81e0aa5f6e784}{insert\+\_\+at}} (\mbox{\hyperlink{classR__type_1_1SparseArray_af5c52d5e6f8a6bbabc8ef26b7c67060a}{size\+\_\+type}} pos, Component \&\&component)
+\item 
+void \mbox{\hyperlink{classR__type_1_1SparseArray_a99d39902fbc777c998a5a837e496942f}{erase}} (\mbox{\hyperlink{classR__type_1_1SparseArray_af5c52d5e6f8a6bbabc8ef26b7c67060a}{size\+\_\+type}} pos)
+\item 
+\mbox{\hyperlink{classR__type_1_1SparseArray_af5c52d5e6f8a6bbabc8ef26b7c67060a}{size\+\_\+type}} \mbox{\hyperlink{classR__type_1_1SparseArray_aeb6743a25cea15b63bceab64c5e3a672}{get\+\_\+index}} (\mbox{\hyperlink{classR__type_1_1SparseArray_aafec7be4aaea86fdc100a07045087450}{value\+\_\+type}} const \&vlue) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classR__type_1_1SparseArray_a15596b6bd717979a3a43c97bbca680db}{container\+\_\+t}} \mbox{\hyperlink{classR__type_1_1SparseArray_afeb357cd1a281bc9a84f6b52df1d1d7b}{\+\_\+data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Component$>$\newline
+class R\+\_\+type\+::\+Sparse\+Array$<$ Component $>$}
+
+A Sparse array class to store sparse components efficiently. 
+
+This class is designed to store components that are assigned to a large set of entities in an Entity-\/\+Component-\/\+System (ECS) architecture. It uses one vectors to store components for every entities that have them, optimizing time usage for sparse components.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of component to be stored in the Sparse array. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classR__type_1_1SparseArray_ac0115e52c12b496beae0727b2c280280}\label{classR__type_1_1SparseArray_ac0115e52c12b496beae0727b2c280280}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!allocator@{allocator}}
+\index{allocator@{allocator}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{allocator}{allocator}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1SparseArray_ac0115e52c12b496beae0727b2c280280}{allocator}} =  typename std\+::allocator$<$Component$>$}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_a37e7994f6e03e555c37183a30a1b6558}\label{classR__type_1_1SparseArray_a37e7994f6e03e555c37183a30a1b6558}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!allocator\_traits@{allocator\_traits}}
+\index{allocator\_traits@{allocator\_traits}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{allocator\_traits}{allocator\_traits}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1SparseArray_a37e7994f6e03e555c37183a30a1b6558}{allocator\+\_\+traits}} =  typename std\+::allocator\+\_\+traits$<$\mbox{\hyperlink{classR__type_1_1SparseArray_ac0115e52c12b496beae0727b2c280280}{allocator}}$>$}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_a99f44655998b617b02fb00c1133a2745}\label{classR__type_1_1SparseArray_a99f44655998b617b02fb00c1133a2745}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!const\_iterator@{const\_iterator}}
+\index{const\_iterator@{const\_iterator}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{const\_iterator}{const\_iterator}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1SparseArray_a99f44655998b617b02fb00c1133a2745}{const\+\_\+iterator}} =  typename container\+\_\+t\+::const\+\_\+iterator}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_a542d6669519db465e236818241f38524}\label{classR__type_1_1SparseArray_a542d6669519db465e236818241f38524}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!const\_reference\_type@{const\_reference\_type}}
+\index{const\_reference\_type@{const\_reference\_type}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{const\_reference\_type}{const\_reference\_type}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1SparseArray_a542d6669519db465e236818241f38524}{const\+\_\+reference\+\_\+type}} =  const \mbox{\hyperlink{classR__type_1_1SparseArray_aafec7be4aaea86fdc100a07045087450}{value\+\_\+type}} \&}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_a15596b6bd717979a3a43c97bbca680db}\label{classR__type_1_1SparseArray_a15596b6bd717979a3a43c97bbca680db}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!container\_t@{container\_t}}
+\index{container\_t@{container\_t}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{container\_t}{container\_t}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1SparseArray_a15596b6bd717979a3a43c97bbca680db}{container\+\_\+t}} =  std\+::vector$<$\mbox{\hyperlink{classR__type_1_1SparseArray_aafec7be4aaea86fdc100a07045087450}{value\+\_\+type}}$>$}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_a4d3a28722ca6c5be164bcfebd1697160}\label{classR__type_1_1SparseArray_a4d3a28722ca6c5be164bcfebd1697160}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!iterator@{iterator}}
+\index{iterator@{iterator}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{iterator}{iterator}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1SparseArray_a4d3a28722ca6c5be164bcfebd1697160}{iterator}} =  typename container\+\_\+t\+::iterator}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_a70bde2c3b514095faa9f8547264544cf}\label{classR__type_1_1SparseArray_a70bde2c3b514095faa9f8547264544cf}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!reference\_type@{reference\_type}}
+\index{reference\_type@{reference\_type}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{reference\_type}{reference\_type}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1SparseArray_a70bde2c3b514095faa9f8547264544cf}{reference\+\_\+type}} =  \mbox{\hyperlink{classR__type_1_1SparseArray_aafec7be4aaea86fdc100a07045087450}{value\+\_\+type}} \&}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_af5c52d5e6f8a6bbabc8ef26b7c67060a}\label{classR__type_1_1SparseArray_af5c52d5e6f8a6bbabc8ef26b7c67060a}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!size\_type@{size\_type}}
+\index{size\_type@{size\_type}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{size\_type}{size\_type}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1SparseArray_af5c52d5e6f8a6bbabc8ef26b7c67060a}{size\+\_\+type}} =  typename container\+\_\+t\+::size\+\_\+type}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_aafec7be4aaea86fdc100a07045087450}\label{classR__type_1_1SparseArray_aafec7be4aaea86fdc100a07045087450}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!value\_type@{value\_type}}
+\index{value\_type@{value\_type}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{value\_type}{value\_type}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1SparseArray_aafec7be4aaea86fdc100a07045087450}{value\+\_\+type}} =  std\+::optional$<$Component$>$}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classR__type_1_1SparseArray_aceb874ef51e7791e65b62a28f340e2ab}\label{classR__type_1_1SparseArray_aceb874ef51e7791e65b62a28f340e2ab}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!SparseArray@{SparseArray}}
+\index{SparseArray@{SparseArray}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{SparseArray()}{SparseArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1SparseArray}{Sparse\+Array}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_a1386ce7e4b175bd65ee30319a5fb78d7}\label{classR__type_1_1SparseArray_a1386ce7e4b175bd65ee30319a5fb78d7}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!SparseArray@{SparseArray}}
+\index{SparseArray@{SparseArray}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{SparseArray()}{SparseArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1SparseArray}{Sparse\+Array}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1SparseArray}{Sparse\+Array}}$<$ Component $>$ const \&}]{vlue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_a76a6a88b483e999951f597f8dd732900}\label{classR__type_1_1SparseArray_a76a6a88b483e999951f597f8dd732900}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!SparseArray@{SparseArray}}
+\index{SparseArray@{SparseArray}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{SparseArray()}{SparseArray()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1SparseArray}{Sparse\+Array}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1SparseArray}{Sparse\+Array}}$<$ Component $>$ const \&\&}]{vlue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_addab15b02f423561bc3443af8c36f7f4}\label{classR__type_1_1SparseArray_addab15b02f423561bc3443af8c36f7f4}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!````~SparseArray@{$\sim$SparseArray}}
+\index{````~SparseArray@{$\sim$SparseArray}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$SparseArray()}{~SparseArray()}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::$\sim$\mbox{\hyperlink{classR__type_1_1SparseArray}{Sparse\+Array}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classR__type_1_1SparseArray_ae42c2631632c1ecd569d5bc6522b6df4}\label{classR__type_1_1SparseArray_ae42c2631632c1ecd569d5bc6522b6df4}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!at@{at}}
+\index{at@{at}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1SparseArray_aafec7be4aaea86fdc100a07045087450}{value\+\_\+type}} \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::at (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_aa53be8ce9d1ed979d00dd3b92df22ace}\label{classR__type_1_1SparseArray_aa53be8ce9d1ed979d00dd3b92df22ace}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!begin@{begin}}
+\index{begin@{begin}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1SparseArray_a4d3a28722ca6c5be164bcfebd1697160}{iterator}} \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_a7d4fea96c175193b024b108968174182}\label{classR__type_1_1SparseArray_a7d4fea96c175193b024b108968174182}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!begin@{begin}}
+\index{begin@{begin}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1SparseArray_a99f44655998b617b02fb00c1133a2745}{const\+\_\+iterator}} \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_a09a5a92e5670b9fc4f680ac42cabd11a}\label{classR__type_1_1SparseArray_a09a5a92e5670b9fc4f680ac42cabd11a}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!cbegin@{cbegin}}
+\index{cbegin@{cbegin}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{cbegin()}{cbegin()}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1SparseArray_a99f44655998b617b02fb00c1133a2745}{const\+\_\+iterator}} \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::cbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_ac822f39a6b0e5f2933f9dabda9c5b933}\label{classR__type_1_1SparseArray_ac822f39a6b0e5f2933f9dabda9c5b933}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!cend@{cend}}
+\index{cend@{cend}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{cend()}{cend()}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1SparseArray_a99f44655998b617b02fb00c1133a2745}{const\+\_\+iterator}} \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::cend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_a77fbd4c7d31a5ec222960cc5b7c3039a}\label{classR__type_1_1SparseArray_a77fbd4c7d31a5ec222960cc5b7c3039a}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!end@{end}}
+\index{end@{end}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1SparseArray_a4d3a28722ca6c5be164bcfebd1697160}{iterator}} \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_a8ebab4ac76e338dd38d797c837329afa}\label{classR__type_1_1SparseArray_a8ebab4ac76e338dd38d797c837329afa}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!end@{end}}
+\index{end@{end}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1SparseArray_a99f44655998b617b02fb00c1133a2745}{const\+\_\+iterator}} \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_a99d39902fbc777c998a5a837e496942f}\label{classR__type_1_1SparseArray_a99d39902fbc777c998a5a837e496942f}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!erase@{erase}}
+\index{erase@{erase}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+void \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1SparseArray_af5c52d5e6f8a6bbabc8ef26b7c67060a}{size\+\_\+type}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_aeb6743a25cea15b63bceab64c5e3a672}\label{classR__type_1_1SparseArray_aeb6743a25cea15b63bceab64c5e3a672}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!get\_index@{get\_index}}
+\index{get\_index@{get\_index}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{get\_index()}{get\_index()}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1SparseArray_af5c52d5e6f8a6bbabc8ef26b7c67060a}{size\+\_\+type}} \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::get\+\_\+index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1SparseArray_aafec7be4aaea86fdc100a07045087450}{value\+\_\+type}} const \&}]{vlue }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_ad219311ad56ef4a987b81e0aa5f6e784}\label{classR__type_1_1SparseArray_ad219311ad56ef4a987b81e0aa5f6e784}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!insert\_at@{insert\_at}}
+\index{insert\_at@{insert\_at}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{insert\_at()}{insert\_at()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1SparseArray_a70bde2c3b514095faa9f8547264544cf}{reference\+\_\+type}} \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::insert\+\_\+at (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1SparseArray_af5c52d5e6f8a6bbabc8ef26b7c67060a}{size\+\_\+type}}}]{pos,  }\item[{Component \&\&}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_a20c57f16d770459c6af6cdb2e2feac8d}\label{classR__type_1_1SparseArray_a20c57f16d770459c6af6cdb2e2feac8d}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!insert\_at@{insert\_at}}
+\index{insert\_at@{insert\_at}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{insert\_at()}{insert\_at()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1SparseArray_a70bde2c3b514095faa9f8547264544cf}{reference\+\_\+type}} \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::insert\+\_\+at (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1SparseArray_af5c52d5e6f8a6bbabc8ef26b7c67060a}{size\+\_\+type}}}]{pos,  }\item[{Component const \&}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_a5cecec6bc7beb33f04a997afc7974253}\label{classR__type_1_1SparseArray_a5cecec6bc7beb33f04a997afc7974253}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1SparseArray}{Sparse\+Array}}\& \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1SparseArray}{Sparse\+Array}}$<$ Component $>$ \&\&}]{vlue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_a7641a5dd07e21b4b46a2882052a146b5}\label{classR__type_1_1SparseArray_a7641a5dd07e21b4b46a2882052a146b5}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1SparseArray}{Sparse\+Array}}\& \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1SparseArray}{Sparse\+Array}}$<$ Component $>$ const \&}]{vlue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_aa32773c6455fcee5b155f805b96c8d22}\label{classR__type_1_1SparseArray_aa32773c6455fcee5b155f805b96c8d22}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1SparseArray_a70bde2c3b514095faa9f8547264544cf}{reference\+\_\+type}} \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_a5ce02b72d71a8ad00d45cb5549a9d856}\label{classR__type_1_1SparseArray_a5ce02b72d71a8ad00d45cb5549a9d856}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1SparseArray_a542d6669519db465e236818241f38524}{const\+\_\+reference\+\_\+type}} \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1SparseArray_a739ef66590e9164c04754e46fce0c1ae}\label{classR__type_1_1SparseArray_a739ef66590e9164c04754e46fce0c1ae}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!size@{size}}
+\index{size@{size}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1SparseArray_af5c52d5e6f8a6bbabc8ef26b7c67060a}{size\+\_\+type}} \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classR__type_1_1SparseArray_afeb357cd1a281bc9a84f6b52df1d1d7b}\label{classR__type_1_1SparseArray_afeb357cd1a281bc9a84f6b52df1d1d7b}} 
+\index{R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}!\_data@{\_data}}
+\index{\_data@{\_data}!R\_type::SparseArray$<$ Component $>$@{R\_type::SparseArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{\_data}{\_data}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1SparseArray_a15596b6bd717979a3a43c97bbca680db}{container\+\_\+t}} \mbox{\hyperlink{classR__type_1_1SparseArray}{R\+\_\+type\+::\+Sparse\+Array}}$<$ Component $>$\+::\+\_\+data\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/teddsk/\+B-\/\+CPP-\/500-\/\+COT-\/5-\/1-\/rtype-\/ange-\/marie.\+dossou/include/nova\+\_\+engine/core/\mbox{\hyperlink{sparse__array_8hpp}{sparse\+\_\+array.\+hpp}}\end{DoxyCompactItemize}

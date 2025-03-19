@@ -1,0 +1,45 @@
+{
+    "entities": [
+        "entity",
+        "entity_start",
+        "entity_play",
+        "entity_shop",
+        "entity_quit"
+    ],
+    "sprites": [
+      { "entity": "entity", "asset": "menu background" },
+      { "entity": "entity_start", "asset": "start" },
+      { "entity": "entity_play", "asset": "play" },
+      { "entity": "entity_shop", "asset": "shop" },
+      { "entity": "entity_quit", "asset": "quit" }
+    ],
+    "texts": [
+      { "entity": "entity_name", "content": "ZUMA REVENGE", "font": "main_font", "color": {"r": 255, "g": 255, "b": 255}, "size": 100 }
+    ],
+    "positions": [
+      { "entity": "entity", "x": 5, "y": 5 },
+      { "entity": "entity_start", "x": 200, "y": 300 },
+      { "entity": "entity_play", "x": 200, "y": 400 },
+      { "entity": "entity_shop", "x": 200, "y": 500 },
+      { "entity": "entity_quit", "x": 200, "y": 600 },
+      { "entity": "entity_name", "x": 800, "y": 20 }
+    ],
+    "clickables": [
+      { "entity": "entity_start", "name": "Start" },
+      { "entity": "entity_play", "name": "Play" },
+      { "entity": "entity_shop", "name": "Shop" },
+      { "entity": "entity_quit", "name": "Quit" }
+    ],
+    "colliders": [
+      { "entity": "entity_start", "width": 350, "height": 55 },
+      { "entity": "entity_play", "width": 350, "height": 55 },
+      { "entity": "entity_shop", "width": 350, "height": 55 },
+      { "entity": "entity_quit", "width": 350, "height": 55 }
+    ],
+    "sounds": [],
+    "inputs": [],
+    "rectangles": [],
+    "circles": [],
+    "velocities": []
+  }
+  

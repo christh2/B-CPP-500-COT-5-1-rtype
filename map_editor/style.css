@@ -1,0 +1,14 @@
+#addEntityButton {
+    background-color: #4682B4;  /* Bleu acier */
+}
+
+#addPositionButton {
+    background-color: red;
+}
+
+#saveJsonButton {
+    background-color: blueviolet;
+    width: 20px;
+    height: 50px;
+}
+

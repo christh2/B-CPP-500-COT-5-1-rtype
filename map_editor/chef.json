@@ -1,0 +1,30 @@
+{
+    "entities": [
+        "ange"
+    ],
+    "positions": [
+    ],
+    "sprites": [
+        {
+            "asset": "undo",
+            "entity": "sprites",
+            "scale": {
+                "x": 1.5,
+                "y": 1.5
+            }
+        }
+    ],
+    "texts": [
+        {
+            "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+            },
+            "content": "server conncetion",
+            "entity": "text",
+            "font": "70",
+            "size": 12
+        }
+    ]
+}

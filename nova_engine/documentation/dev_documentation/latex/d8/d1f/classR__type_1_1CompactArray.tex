@@ -1,0 +1,268 @@
+\hypertarget{classR__type_1_1CompactArray}{}\doxysection{R\+\_\+type\+::Compact\+Array$<$ Component $>$ Class Template Reference}
+\label{classR__type_1_1CompactArray}\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+
+
+A compact array class to store sparse components efficiently.  
+
+
+
+
+{\ttfamily \#include $<$compact\+\_\+array.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classR__type_1_1CompactArray_ad94c1c0bc37bcbd5d5f246a9a480fe7c}{value\+\_\+type}} = std\+::optional$<$ Component $>$
+\item 
+using \mbox{\hyperlink{classR__type_1_1CompactArray_a99540c27457972786b69d24d93063ffb}{reference\+\_\+type}} = \mbox{\hyperlink{classR__type_1_1CompactArray_ad94c1c0bc37bcbd5d5f246a9a480fe7c}{value\+\_\+type}} \&
+\item 
+using \mbox{\hyperlink{classR__type_1_1CompactArray_a48cefcf0a15b79cdbf93518646ee1401}{const\+\_\+reference\+\_\+type}} = const \mbox{\hyperlink{classR__type_1_1CompactArray_ad94c1c0bc37bcbd5d5f246a9a480fe7c}{value\+\_\+type}} \&
+\item 
+using \mbox{\hyperlink{classR__type_1_1CompactArray_a985305bd36d4247b646630ff7f023e51}{container\+\_\+t}} = std\+::vector$<$ \mbox{\hyperlink{classR__type_1_1CompactArray_ad94c1c0bc37bcbd5d5f246a9a480fe7c}{value\+\_\+type}} $>$
+\item 
+using \mbox{\hyperlink{classR__type_1_1CompactArray_a1b03f7b5290cc5ea5f02a794af61a819}{entity\+\_\+id}} = std\+::size\+\_\+t
+\item 
+using \mbox{\hyperlink{classR__type_1_1CompactArray_a78f2e02ba901ec519807aa1607b21e90}{id\+\_\+container}} = std\+::vector$<$ \mbox{\hyperlink{classR__type_1_1CompactArray_a1b03f7b5290cc5ea5f02a794af61a819}{entity\+\_\+id}} $>$
+\item 
+using \mbox{\hyperlink{classR__type_1_1CompactArray_a527af912f5a471d20bd6785afc480154}{size\+\_\+type}} = typename container\+\_\+t\+::size\+\_\+type
+\item 
+using \mbox{\hyperlink{classR__type_1_1CompactArray_aa67aac1c4a735779db72fbe016bdb819}{allocator}} = typename std\+::allocator$<$ Component $>$
+\item 
+using \mbox{\hyperlink{classR__type_1_1CompactArray_a943e5d352640192b431aea30a8dc61fd}{allocator\+\_\+traits}} = typename std\+::allocator\+\_\+traits$<$ \mbox{\hyperlink{classR__type_1_1CompactArray_aa67aac1c4a735779db72fbe016bdb819}{allocator}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classR__type_1_1CompactArray_a98b7b9cbe6c52f3fa6ffe9baaf9f7099}{Compact\+Array}} ()=default
+\item 
+\mbox{\hyperlink{classR__type_1_1CompactArray_a72d2f7b18398d396fb288bb35fd2ce3b}{Compact\+Array}} (\mbox{\hyperlink{classR__type_1_1CompactArray}{Compact\+Array}} const \&vlue)
+\item 
+\mbox{\hyperlink{classR__type_1_1CompactArray_acd98db7823a5a4c998a903ce8838300e}{Compact\+Array}} (\mbox{\hyperlink{classR__type_1_1CompactArray}{Compact\+Array}} const \&\&vlue) noexcept
+\item 
+\mbox{\hyperlink{classR__type_1_1CompactArray_af21ae0075304440e19064391aae32a92}{$\sim$\+Compact\+Array}} ()=default
+\item 
+\mbox{\hyperlink{classR__type_1_1CompactArray}{Compact\+Array}} \& \mbox{\hyperlink{classR__type_1_1CompactArray_adc09a4aa2e3c31b1e2db8aa90735b0dc}{operator=}} (\mbox{\hyperlink{classR__type_1_1CompactArray}{Compact\+Array}} const \&vlue)
+\item 
+\mbox{\hyperlink{classR__type_1_1CompactArray}{Compact\+Array}} \& \mbox{\hyperlink{classR__type_1_1CompactArray_a8d7103d1baf3200d45dde44ca62728c9}{operator=}} (\mbox{\hyperlink{classR__type_1_1CompactArray}{Compact\+Array}} \&\&vlue) noexcept
+\item 
+\mbox{\hyperlink{classR__type_1_1CompactArray_a99540c27457972786b69d24d93063ffb}{reference\+\_\+type}} \mbox{\hyperlink{classR__type_1_1CompactArray_a99811a295ebc85767ea794acaf27ca24}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{classR__type_1_1CompactArray_a1b03f7b5290cc5ea5f02a794af61a819}{entity\+\_\+id}} id)
+\item 
+\mbox{\hyperlink{classR__type_1_1CompactArray_a48cefcf0a15b79cdbf93518646ee1401}{const\+\_\+reference\+\_\+type}} \mbox{\hyperlink{classR__type_1_1CompactArray_a5d782ffdbd814170ae246e63ac845c4e}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{classR__type_1_1CompactArray_a1b03f7b5290cc5ea5f02a794af61a819}{entity\+\_\+id}} id) const
+\item 
+\mbox{\hyperlink{classR__type_1_1CompactArray_ad94c1c0bc37bcbd5d5f246a9a480fe7c}{value\+\_\+type}} \mbox{\hyperlink{classR__type_1_1CompactArray_a6aba3710945a001bd3f0b5a732ab9cb1}{at}} (std\+::size\+\_\+t index)
+\item 
+\mbox{\hyperlink{classR__type_1_1CompactArray_a527af912f5a471d20bd6785afc480154}{size\+\_\+type}} \mbox{\hyperlink{classR__type_1_1CompactArray_aefbf3e3cb9b594f366d0d62be6748bbb}{size}} () const
+\item 
+\mbox{\hyperlink{classR__type_1_1CompactArray_a99540c27457972786b69d24d93063ffb}{reference\+\_\+type}} \mbox{\hyperlink{classR__type_1_1CompactArray_ae6945afcafb61f1e396e0bb33ab599ff}{insert\+\_\+at}} (\mbox{\hyperlink{classR__type_1_1CompactArray_a1b03f7b5290cc5ea5f02a794af61a819}{entity\+\_\+id}} id, Component const \&component)
+\item 
+\mbox{\hyperlink{classR__type_1_1CompactArray_a99540c27457972786b69d24d93063ffb}{reference\+\_\+type}} \mbox{\hyperlink{classR__type_1_1CompactArray_ad2ca3e20b29e3da9344df5c75333da50}{insert\+\_\+at}} (\mbox{\hyperlink{classR__type_1_1CompactArray_a1b03f7b5290cc5ea5f02a794af61a819}{entity\+\_\+id}} id, Component \&\&component)
+\item 
+void \mbox{\hyperlink{classR__type_1_1CompactArray_accc27c6fd680811c286eff9737ade6a1}{erase}} (\mbox{\hyperlink{classR__type_1_1CompactArray_a1b03f7b5290cc5ea5f02a794af61a819}{entity\+\_\+id}} id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classR__type_1_1CompactArray_a985305bd36d4247b646630ff7f023e51}{container\+\_\+t}} \mbox{\hyperlink{classR__type_1_1CompactArray_a33099d8354f9736d805bc9ac7853f2d4}{\+\_\+data}}
+\item 
+\mbox{\hyperlink{classR__type_1_1CompactArray_a78f2e02ba901ec519807aa1607b21e90}{id\+\_\+container}} \mbox{\hyperlink{classR__type_1_1CompactArray_a804f1c9958cb4697794d2b8659a26b8b}{\+\_\+ids}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Component$>$\newline
+class R\+\_\+type\+::\+Compact\+Array$<$ Component $>$}
+
+A compact array class to store sparse components efficiently. 
+
+This class is designed to store components that are not assigned to every entity in an Entity-\/\+Component-\/\+System (ECS) architecture. It uses two vectors to store components for only those entities that have them, optimizing memory usage for sparse components.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of component to be stored in the compact array. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classR__type_1_1CompactArray_aa67aac1c4a735779db72fbe016bdb819}\label{classR__type_1_1CompactArray_aa67aac1c4a735779db72fbe016bdb819}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!allocator@{allocator}}
+\index{allocator@{allocator}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{allocator}{allocator}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1CompactArray_aa67aac1c4a735779db72fbe016bdb819}{allocator}} =  typename std\+::allocator$<$Component$>$}
+
+\mbox{\Hypertarget{classR__type_1_1CompactArray_a943e5d352640192b431aea30a8dc61fd}\label{classR__type_1_1CompactArray_a943e5d352640192b431aea30a8dc61fd}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!allocator\_traits@{allocator\_traits}}
+\index{allocator\_traits@{allocator\_traits}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{allocator\_traits}{allocator\_traits}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1CompactArray_a943e5d352640192b431aea30a8dc61fd}{allocator\+\_\+traits}} =  typename std\+::allocator\+\_\+traits$<$\mbox{\hyperlink{classR__type_1_1CompactArray_aa67aac1c4a735779db72fbe016bdb819}{allocator}}$>$}
+
+\mbox{\Hypertarget{classR__type_1_1CompactArray_a48cefcf0a15b79cdbf93518646ee1401}\label{classR__type_1_1CompactArray_a48cefcf0a15b79cdbf93518646ee1401}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!const\_reference\_type@{const\_reference\_type}}
+\index{const\_reference\_type@{const\_reference\_type}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{const\_reference\_type}{const\_reference\_type}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1CompactArray_a48cefcf0a15b79cdbf93518646ee1401}{const\+\_\+reference\+\_\+type}} =  const \mbox{\hyperlink{classR__type_1_1CompactArray_ad94c1c0bc37bcbd5d5f246a9a480fe7c}{value\+\_\+type}} \&}
+
+\mbox{\Hypertarget{classR__type_1_1CompactArray_a985305bd36d4247b646630ff7f023e51}\label{classR__type_1_1CompactArray_a985305bd36d4247b646630ff7f023e51}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!container\_t@{container\_t}}
+\index{container\_t@{container\_t}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{container\_t}{container\_t}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1CompactArray_a985305bd36d4247b646630ff7f023e51}{container\+\_\+t}} =  std\+::vector$<$\mbox{\hyperlink{classR__type_1_1CompactArray_ad94c1c0bc37bcbd5d5f246a9a480fe7c}{value\+\_\+type}}$>$}
+
+\mbox{\Hypertarget{classR__type_1_1CompactArray_a1b03f7b5290cc5ea5f02a794af61a819}\label{classR__type_1_1CompactArray_a1b03f7b5290cc5ea5f02a794af61a819}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!entity\_id@{entity\_id}}
+\index{entity\_id@{entity\_id}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{entity\_id}{entity\_id}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1CompactArray_a1b03f7b5290cc5ea5f02a794af61a819}{entity\+\_\+id}} =  std\+::size\+\_\+t}
+
+\mbox{\Hypertarget{classR__type_1_1CompactArray_a78f2e02ba901ec519807aa1607b21e90}\label{classR__type_1_1CompactArray_a78f2e02ba901ec519807aa1607b21e90}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!id\_container@{id\_container}}
+\index{id\_container@{id\_container}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{id\_container}{id\_container}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1CompactArray_a78f2e02ba901ec519807aa1607b21e90}{id\+\_\+container}} =  std\+::vector$<$\mbox{\hyperlink{classR__type_1_1CompactArray_a1b03f7b5290cc5ea5f02a794af61a819}{entity\+\_\+id}}$>$}
+
+\mbox{\Hypertarget{classR__type_1_1CompactArray_a99540c27457972786b69d24d93063ffb}\label{classR__type_1_1CompactArray_a99540c27457972786b69d24d93063ffb}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!reference\_type@{reference\_type}}
+\index{reference\_type@{reference\_type}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{reference\_type}{reference\_type}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1CompactArray_a99540c27457972786b69d24d93063ffb}{reference\+\_\+type}} =  \mbox{\hyperlink{classR__type_1_1CompactArray_ad94c1c0bc37bcbd5d5f246a9a480fe7c}{value\+\_\+type}} \&}
+
+\mbox{\Hypertarget{classR__type_1_1CompactArray_a527af912f5a471d20bd6785afc480154}\label{classR__type_1_1CompactArray_a527af912f5a471d20bd6785afc480154}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!size\_type@{size\_type}}
+\index{size\_type@{size\_type}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{size\_type}{size\_type}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1CompactArray_a527af912f5a471d20bd6785afc480154}{size\+\_\+type}} =  typename container\+\_\+t\+::size\+\_\+type}
+
+\mbox{\Hypertarget{classR__type_1_1CompactArray_ad94c1c0bc37bcbd5d5f246a9a480fe7c}\label{classR__type_1_1CompactArray_ad94c1c0bc37bcbd5d5f246a9a480fe7c}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!value\_type@{value\_type}}
+\index{value\_type@{value\_type}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{value\_type}{value\_type}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+using \mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1CompactArray_ad94c1c0bc37bcbd5d5f246a9a480fe7c}{value\+\_\+type}} =  std\+::optional$<$Component$>$}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classR__type_1_1CompactArray_a98b7b9cbe6c52f3fa6ffe9baaf9f7099}\label{classR__type_1_1CompactArray_a98b7b9cbe6c52f3fa6ffe9baaf9f7099}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!CompactArray@{CompactArray}}
+\index{CompactArray@{CompactArray}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{CompactArray()}{CompactArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1CompactArray}{Compact\+Array}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classR__type_1_1CompactArray_a72d2f7b18398d396fb288bb35fd2ce3b}\label{classR__type_1_1CompactArray_a72d2f7b18398d396fb288bb35fd2ce3b}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!CompactArray@{CompactArray}}
+\index{CompactArray@{CompactArray}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{CompactArray()}{CompactArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1CompactArray}{Compact\+Array}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1CompactArray}{Compact\+Array}}$<$ Component $>$ const \&}]{vlue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1CompactArray_acd98db7823a5a4c998a903ce8838300e}\label{classR__type_1_1CompactArray_acd98db7823a5a4c998a903ce8838300e}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!CompactArray@{CompactArray}}
+\index{CompactArray@{CompactArray}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{CompactArray()}{CompactArray()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::\mbox{\hyperlink{classR__type_1_1CompactArray}{Compact\+Array}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1CompactArray}{Compact\+Array}}$<$ Component $>$ const \&\&}]{vlue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classR__type_1_1CompactArray_af21ae0075304440e19064391aae32a92}\label{classR__type_1_1CompactArray_af21ae0075304440e19064391aae32a92}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!````~CompactArray@{$\sim$CompactArray}}
+\index{````~CompactArray@{$\sim$CompactArray}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$CompactArray()}{~CompactArray()}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::$\sim$\mbox{\hyperlink{classR__type_1_1CompactArray}{Compact\+Array}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classR__type_1_1CompactArray_a6aba3710945a001bd3f0b5a732ab9cb1}\label{classR__type_1_1CompactArray_a6aba3710945a001bd3f0b5a732ab9cb1}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!at@{at}}
+\index{at@{at}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1CompactArray_ad94c1c0bc37bcbd5d5f246a9a480fe7c}{value\+\_\+type}} \mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::at (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1CompactArray_accc27c6fd680811c286eff9737ade6a1}\label{classR__type_1_1CompactArray_accc27c6fd680811c286eff9737ade6a1}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!erase@{erase}}
+\index{erase@{erase}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+void \mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1CompactArray_a1b03f7b5290cc5ea5f02a794af61a819}{entity\+\_\+id}}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1CompactArray_ad2ca3e20b29e3da9344df5c75333da50}\label{classR__type_1_1CompactArray_ad2ca3e20b29e3da9344df5c75333da50}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!insert\_at@{insert\_at}}
+\index{insert\_at@{insert\_at}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{insert\_at()}{insert\_at()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1CompactArray_a99540c27457972786b69d24d93063ffb}{reference\+\_\+type}} \mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::insert\+\_\+at (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1CompactArray_a1b03f7b5290cc5ea5f02a794af61a819}{entity\+\_\+id}}}]{id,  }\item[{Component \&\&}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1CompactArray_ae6945afcafb61f1e396e0bb33ab599ff}\label{classR__type_1_1CompactArray_ae6945afcafb61f1e396e0bb33ab599ff}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!insert\_at@{insert\_at}}
+\index{insert\_at@{insert\_at}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{insert\_at()}{insert\_at()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1CompactArray_a99540c27457972786b69d24d93063ffb}{reference\+\_\+type}} \mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::insert\+\_\+at (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1CompactArray_a1b03f7b5290cc5ea5f02a794af61a819}{entity\+\_\+id}}}]{id,  }\item[{Component const \&}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1CompactArray_a8d7103d1baf3200d45dde44ca62728c9}\label{classR__type_1_1CompactArray_a8d7103d1baf3200d45dde44ca62728c9}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1CompactArray}{Compact\+Array}}\& \mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1CompactArray}{Compact\+Array}}$<$ Component $>$ \&\&}]{vlue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classR__type_1_1CompactArray_adc09a4aa2e3c31b1e2db8aa90735b0dc}\label{classR__type_1_1CompactArray_adc09a4aa2e3c31b1e2db8aa90735b0dc}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1CompactArray}{Compact\+Array}}\& \mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1CompactArray}{Compact\+Array}}$<$ Component $>$ const \&}]{vlue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1CompactArray_a99811a295ebc85767ea794acaf27ca24}\label{classR__type_1_1CompactArray_a99811a295ebc85767ea794acaf27ca24}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1CompactArray_a99540c27457972786b69d24d93063ffb}{reference\+\_\+type}} \mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1CompactArray_a1b03f7b5290cc5ea5f02a794af61a819}{entity\+\_\+id}}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1CompactArray_a5d782ffdbd814170ae246e63ac845c4e}\label{classR__type_1_1CompactArray_a5d782ffdbd814170ae246e63ac845c4e}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1CompactArray_a48cefcf0a15b79cdbf93518646ee1401}{const\+\_\+reference\+\_\+type}} \mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classR__type_1_1CompactArray_a1b03f7b5290cc5ea5f02a794af61a819}{entity\+\_\+id}}}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classR__type_1_1CompactArray_aefbf3e3cb9b594f366d0d62be6748bbb}\label{classR__type_1_1CompactArray_aefbf3e3cb9b594f366d0d62be6748bbb}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!size@{size}}
+\index{size@{size}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1CompactArray_a527af912f5a471d20bd6785afc480154}{size\+\_\+type}} \mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classR__type_1_1CompactArray_a33099d8354f9736d805bc9ac7853f2d4}\label{classR__type_1_1CompactArray_a33099d8354f9736d805bc9ac7853f2d4}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!\_data@{\_data}}
+\index{\_data@{\_data}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{\_data}{\_data}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1CompactArray_a985305bd36d4247b646630ff7f023e51}{container\+\_\+t}} \mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::\+\_\+data\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classR__type_1_1CompactArray_a804f1c9958cb4697794d2b8659a26b8b}\label{classR__type_1_1CompactArray_a804f1c9958cb4697794d2b8659a26b8b}} 
+\index{R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}!\_ids@{\_ids}}
+\index{\_ids@{\_ids}!R\_type::CompactArray$<$ Component $>$@{R\_type::CompactArray$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{\_ids}{\_ids}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+\mbox{\hyperlink{classR__type_1_1CompactArray_a78f2e02ba901ec519807aa1607b21e90}{id\+\_\+container}} \mbox{\hyperlink{classR__type_1_1CompactArray}{R\+\_\+type\+::\+Compact\+Array}}$<$ Component $>$\+::\+\_\+ids\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/teddsk/\+B-\/\+CPP-\/500-\/\+COT-\/5-\/1-\/rtype-\/ange-\/marie.\+dossou/include/nova\+\_\+engine/core/\mbox{\hyperlink{compact__array_8hpp}{compact\+\_\+array.\+hpp}}\end{DoxyCompactItemize}

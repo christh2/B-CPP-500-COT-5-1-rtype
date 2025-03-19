@@ -1,0 +1,43 @@
+{
+    "entities": [
+        "entity_loading",
+        "entity_text"
+    ],
+    "sprites": [
+      {
+        "entity": "entity_loading",
+        "asset": "connect_loading",
+        "scale": {"x": 1, "y": 1}
+      }
+    ],
+    "texts": [
+      {
+        "entity": "entity_text",
+        "content": "Waiting for players...",
+        "font": "sec_font",
+        "color": {"r": 255, "g": 255, "b": 255},
+        "size": 80
+      }
+    ],
+    "positions": [
+      {
+        "entity": "entity_loading",
+        "x": 800,
+        "y": 250
+      },
+      {
+        "entity": "entity_text",
+        "x": 300,
+        "y": 20
+      }
+    ],
+    "clickables": [],
+    "colliders": [],
+    "sounds": [],
+    "inputs": [],
+    "snacks": [],
+    "rectangles": [],
+    "circles": [],
+    "spritesheets": [],
+    "velocities": []
+}

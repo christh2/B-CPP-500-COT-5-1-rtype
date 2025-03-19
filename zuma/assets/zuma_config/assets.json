@@ -1,0 +1,23 @@
+{
+    "assets": [
+        { "name": "start", "path": "../assets/static_sprite/start.png" },
+        { "name": "play", "path": "../assets/static_sprite/play.png" },
+        { "name": "start hover", "path": "../assets/static_sprite/start_hover.png" },
+        { "name": "play hover", "path": "../assets/static_sprite/play_hover.png" },
+        { "name": "quit", "path": "../assets/static_sprite/quit.png" },
+        { "name": "quit hover", "path": "../assets/static_sprite/quit_hover.png" },
+        { "name": "shop", "path": "../assets/static_sprite/quit.png" },
+        { "name": "shop hover", "path": "../assets/static_sprite/shop_hover.png" }
+    ],
+    "multi_frame_assets": [
+        { "name": "loading", "path": "../assets/sprite_sheet/backgroud", "frame": 0.5}
+    ],
+    "fonts": [
+        { "name": "main_font", "path": "../assets/font/Aztec.ttf" }
+    ],
+    "musics": [
+    ],
+    "audios": [
+    ]
+  }
+  

@@ -1,0 +1,39 @@
+{
+    "entities": [
+      "city",
+      "title_text",
+      "back_button",
+      "back_button_text"
+    ],
+    "sprites": [
+      { "entity": "city", "asset": "loading", "scale": {"x": 1, "y": 1} },
+      { "entity": "back_button", "asset": "undo", "scale": {"x": 2, "y": 2} }
+    ],
+    "texts": [
+      {
+        "entity": "title_text",
+        "content": "High Scores",
+        "font": "sec_font",
+        "color": { "r": 255, "g": 255, "b": 255 },
+        "size": 80
+      }
+    ],
+    "positions": [
+      { "entity": "city", "x": 0, "y": 0 },
+      { "entity": "title_text", "x": 500, "y": 50 },
+      { "entity": "back_button", "x": 1800, "y": 20 },
+      { "entity": "back_button_text", "x": 110, "y": 815 }
+    ],
+    "clickables": [
+      { "entity": "back_button", "name": "back" }
+    ],
+    "colliders": [
+      { "entity": "back_button", "width": 128, "height": 64 }
+    ],
+    "sounds": [],
+    "inputs": [],
+    "rectangles": [],
+    "circles": [],
+    "velocities": []
+  }
+  

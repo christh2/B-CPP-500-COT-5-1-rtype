@@ -1,0 +1,84 @@
+{
+    "entities": [
+      "back1",
+      "back2",
+      "back3",
+      "entity_name",
+      "left_arrow",
+      "right_arrow",
+      "play_button",
+      "ship",
+      "ship_name",
+      "snack",
+      "button_text",
+      "back_button"
+    ],
+    "sprites": [
+      { "entity": "back1", "asset": "back1", "scale": {"x": 1, "y": 1}},
+      { "entity": "back2", "asset": "back2", "scale": {"x": 1, "y": 1}},
+      { "entity": "back3", "asset": "back3", "scale": {"x": 1, "y": 1}},
+      { "entity": "left_arrow", "asset": "undo", "scale": {"x": 2, "y": 2} },
+      { "entity": "right_arrow", "asset": "redo", "scale": {"x": 2, "y": 2} },
+      { "entity": "snack", "asset": "snack", "scale": {"x": 1, "y": 1} },
+      { "entity": "ship", "asset": "rocket", "scale": {"x": 1.5, "y": 1.5} },
+      { "entity": "back_button", "asset": "undo", "scale": {"x": 2, "y": 2} }
+    ],
+    "texts": [
+      {
+        "entity": "ship_name", 
+        "content": "rocket", 
+        "font": "main_font", 
+        "color": {"r": 255, "g": 255, "b": 255}, 
+        "size": 50 
+      },
+      { 
+        "entity": "entity_name", 
+        "content": "Choose your spaceship", 
+        "font": "sec_font",
+        "color": {"r": 255, "g": 255, "b": 255}, 
+        "size": 60 
+      },
+      {
+        "entity": "button_text", 
+        "content": "Ready", 
+        "font": "sec_font", 
+        "color": {"r": 0, "g": 0, "b": 0}, 
+        "size": 30
+      }
+    ],
+    "positions": [
+      { "entity": "back1", "x": 0, "y": 0 },
+      { "entity": "back2", "x": 1900, "y": 0 },
+      { "entity": "back3", "x": 3800, "y": 0 },
+      { "entity": "left_arrow", "x": 400, "y": 500 },
+      { "entity": "right_arrow", "x": 1400, "y": 500 },
+      { "entity": "snack", "x": 600, "y": 800 },
+      { "entity": "button_text", "x": 830, "y": 805 },
+      { "entity": "ship", "x": 780, "y": 500 },
+      { "entity": "entity_name", "x": 360, "y": 30 },
+      { "entity": "back_button", "x": 1800, "y": 20 },
+      { "entity": "ship_name", "x": 750, "y": 300 }
+    ],
+    "clickables": [
+      { "entity": "snack", "name": "play" },
+      { "entity": "left_arrow", "name": "navigate_left" },
+      { "entity": "right_arrow", "name": "navigate_right" },
+      { "entity": "back_button", "name": "back" }
+    ],
+    "colliders": [
+      { "entity": "snack", "width": 587, "height": 58 },
+      { "entity": "left_arrow", "width": 64, "height": 64 },
+      { "entity": "right_arrow", "width": 64, "height": 64 },
+      { "entity": "back_button", "width": 128, "height": 64 }
+    ],
+    "sounds": [],
+    "inputs": [],
+    "rectangles": [],
+    "circles": [],
+    "velocities": [
+      { "entity": "back1", "x": 0.03, "y": 0, "dir_x": -1, "dir_y": 1 },
+      { "entity": "back2", "x": 0.03, "y": 0, "dir_x": -1, "dir_y": 1 },
+      { "entity": "back3", "x": 0.03, "y": 0, "dir_x": -1, "dir_y": 1 }
+    ]
+  }
+  

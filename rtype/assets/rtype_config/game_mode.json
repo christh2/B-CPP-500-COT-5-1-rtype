@@ -1,0 +1,87 @@
+{
+    "entities": [
+      "entity",
+      "entity1",
+      "entity2",
+      "entity_name",
+      "snack_online",
+      "snack_local",
+      "snack_endless",
+      "selector",
+      "online",
+      "local",
+      "endless",
+      "entity_online",
+      "entity_local",
+      "entity_endless",
+      "entity_back"
+    ],
+    "sprites": [
+      { "entity": "entity", "asset": "back1", "scale": {"x": 1, "y": 1} },
+      { "entity": "entity1", "asset": "back2", "scale": {"x": 1, "y": 1} },
+      { "entity": "entity2", "asset": "back3", "scale": {"x": 1, "y": 1} },
+      { "entity": "online", "asset": "online hover", "scale": {"x": 1, "y": 1}},
+      { "entity": "local", "asset": "astro", "scale": {"x": 1, "y": 1}},
+      { "entity": "endless", "asset": "infini", "scale": {"x": 1, "y": 1}},
+      { "entity": "snack_online", "asset": "snack", "scale": {"x": 0.55, "y": 0.8}},
+      { "entity": "snack_local", "asset": "snack", "scale": {"x": 0.55, "y": 0.8}},
+      { "entity": "snack_endless", "asset": "snack", "scale": {"x": 0.55, "y": 0.8}},
+      {
+        "entity": "entity_back",
+        "asset": "undo",
+        "scale": {"x": 1.5, "y": 1.5}
+      }
+    ],
+    "spritesheets": [
+      { "entity": "selector", "asset": "hero", "scale": {"x": 1.5, "y": 1.5}, "frame": 800, "x": 0, "y": 0, "w": 33, "h": 20, "nb_col": 2, "nb_row": 1}
+    ],
+    "texts": [
+      { "entity": "entity_name", "content": "Game mode", "font": "sec_font", "color": {"r": 255, "g": 255, "b": 255}, "size": 80 },
+      { "entity": "entity_online", "content": "online game", "font": "main_font", "color": {"r": 0, "g": 0, "b": 0}, "size": 20 },
+      { "entity": "entity_endless", "content": "endless game", "font": "main_font", "color": {"r": 0, "g": 0, "b": 0}, "size": 20 },
+      { "entity": "entity_local", "content": "Story mode", "font": "main_font", "color": {"r": 0, "g": 0, "b": 0}, "size": 20 }
+    ],
+    "positions": [
+      { "entity": "entity", "x": 5, "y": 5 },
+      { "entity": "entity1", "x": 1905, "y": 5 },
+      { "entity": "entity2", "x": 3805, "y": 5 },
+      { "entity": "online", "x": 230, "y": 300 },
+      { "entity": "entity_online", "x": 280, "y": 705 },
+      { "entity": "snack_online", "x": 200, "y": 700 },
+      { "entity": "local", "x": 830, "y": 300 },
+      { "entity": "entity_local", "x": 880, "y": 705 },
+      { "entity": "snack_local", "x": 800, "y": 700 },
+      { "entity": "selector", "x": 120, "y": 400 },
+      { "entity": "endless", "x": 1380, "y": 350 },
+      { "entity": "entity_endless", "x": 1480, "y": 705 },
+      { "entity": "snack_endless", "x": 1400, "y": 700 },
+      { "entity": "entity_name", "x": 650, "y": 20 },
+      { "entity": "entity_back", "x": 1800, "y": 20 }
+    ],
+    "clickables": [
+      {
+        "entity": "entity_back",
+        "name": "back"
+      }
+    ],
+    "colliders": [
+      {
+        "entity": "entity_back",
+        "width": 100,
+        "height": 100
+      }
+    ],
+    "sounds": [],
+    "inputs": [],
+    "rectangles": [
+      
+    ],
+    "circles": [],
+    "velocities": [
+      { "entity": "entity", "x": 0.03, "y": 0, "dir_x": -1, "dir_y": 1 },
+      { "entity": "entity1", "x": 0.03, "y": 0, "dir_x": -1, "dir_y": 1 },
+      { "entity": "entity2", "x": 0.03, "y": 0, "dir_x": -1, "dir_y": 1 }
+    ],
+    "snacks": []
+  }
+  

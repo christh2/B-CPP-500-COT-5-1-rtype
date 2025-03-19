@@ -1,0 +1,30 @@
+{
+    "entities": [
+        "christ"
+    ],
+    "positions": [
+    ],
+    "sprites": [
+        {
+            "asset": "fzefefe",
+            "entity": "arffe",
+            "scale": {
+                "x": 1,
+                "y": 1
+            }
+        }
+    ],
+    "texts": [
+        {
+            "color": {
+                "b": 99,
+                "g": 99,
+                "r": 99
+            },
+            "content": "bn,",
+            "entity": "ghjk",
+            "font": "lgikhknr",
+            "size": 12
+        }
+    ]
+}

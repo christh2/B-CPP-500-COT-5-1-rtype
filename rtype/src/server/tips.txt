@@ -1,0 +1,1 @@
+In json files, if you don't want an item in your game set its value to 0.

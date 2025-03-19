@@ -1,0 +1,81 @@
+{
+    "entities": [
+        "back1",
+        "back2",
+        "back3",
+        "score",
+        "health",
+        "health2",
+        "health3",
+        "snack_level",
+        "snack_text"
+    ],
+    "sprites": [
+      { "entity": "back1", "asset": "back1", "scale": {"x": 1, "y": 1}},
+      { "entity": "back2", "asset": "back2", "scale": {"x": 1, "y": 1}},
+      { "entity": "back3", "asset": "back3", "scale": {"x": 1, "y": 1}},
+      { "entity": "snack_level", "asset": "snack", "scale": {"x": 1, "y": 1}}
+    ],
+    "texts": [
+      {
+        "entity": "score",
+        "content": "Score: ",
+        "font": "main_font",
+        "color": {"r": 255, "g": 255, "b": 255},
+        "size": 25
+      },
+      {
+        "entity": "snack_text",
+        "content": "Milky way",
+        "font": "main_font",
+        "color": {"r": 0, "g": 0, "b": 0},
+        "size": 20
+      }
+    ],
+    "positions": [
+      { "entity": "back1", "x": 0, "y": 0 },
+      { "entity": "back2", "x": 1900, "y": 0 },
+      { "entity": "back3", "x": 3800, "y": 0 },
+      { "entity": "score", "x": 0, "y": 0 },
+      { "entity": "health", "x": 0, "y": 30 },
+      { "entity": "health2", "x": 25, "y": 30 },
+      { "entity": "snack_level", "x": 600, "y": 15 },
+      { "entity": "snack_text", "x": 660, "y": 20 },
+      { "entity": "health3", "x": 50, "y": 30 }
+    ],
+    "clickables": [],
+    "colliders": [],
+    "sounds": [],
+    "inputs": [],
+    "rectangles": [],
+    "circles": [
+      {
+        "entity": "health",
+        "radius": 12,
+        "filled": true,
+        "color": { "r": 246, "g": 133, "b": 74 }
+      },
+      {
+        "entity": "health2",
+        "radius": 12,
+        "filled": true,
+        "color": { "r": 246, "g": 133, "b": 74 }
+      },
+      {
+        "entity": "health3",
+        "radius": 12,
+        "filled": true,
+        "color": { "r": 246, "g": 133, "b": 74 }
+      }
+    ],
+    "velocities": [
+      { "entity": "back1", "x": 0.04, "y": 0, "dir_x": -1, "dir_y": 1 },
+      { "entity": "back2", "x": 0.04, "y": 0, "dir_x": -1, "dir_y": 1 },
+      { "entity": "back3", "x": 0.04, "y": 0, "dir_x": -1, "dir_y": 1 }
+    ],
+    "spritesheets": [],
+    "snacks": [
+      { "entity": "snack_level", "duration": 15 },
+      { "entity": "snack_text", "duration": 15 }
+    ]
+  }

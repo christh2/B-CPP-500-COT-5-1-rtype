@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>800</width>
+                <height>600</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>MainWindow</string>
+        </property>
+
+        <!-- Central Widget -->
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QVBoxLayout" name="verticalLayout">
+
+                <!-- entityNameLineEdit -->
+                <item>
+                    <widget class="QLineEdit" name="entityNameLineEdit">
+                        <property name="placeholderText">
+                            <string>Nom de l'entité</string>
+                        </property>
+                    </widget>
+                </item>
+
+                <!-- textEntityLineEdit -->
+                <item>
+                    <widget class="QLineEdit" name="textEntityLineEdit">
+                        <property name="placeholderText">
+                            <string>Entité du texte</string>
+                        </property>
+                    </widget>
+                </item>
+
+
+
+                <!-- textContentLineEdit -->
+                <item>
+                    <widget class="QLineEdit" name="textContentLineEdit">
+                        <property name="placeholderText">
+                            <string>Contenu du texte</string>
+                        </property>
+                    </widget>
+                </item>
+
+                <!-- textFontLineEdit -->
+                <item>
+                    <widget class="QLineEdit" name="textFontLineEdit">
+                        <property name="placeholderText">
+                            <string>Police du texte</string>
+                        </property>
+                    </widget>
+                </item>
+
+                <!-- textSizeSpinBox -->
+                <item>
+                    <widget class="QSpinBox" name="textSizeSpinBox">
+                        <property name="value">
+                            <number>12</number>
+                        </property>
+                        <property name="minimum">
+                            <number>8</number>
+                        </property>
+                        <property name="maximum">
+                            <number>72</number>
+                        </property>
+                    </widget>
+                </item>
+
+                <!-- textColorRSpinBox -->
+                <item>
+                    <widget class="QSpinBox" name="textColorRSpinBox">
+                        <property name="value">
+                            <number>255</number>
+                        </property>
+                        <property name="minimum">
+                            <number>0</number>
+                        </property>
+                        <property name="maximum">
+                            <number>255</number>
+                        </property>
+                    </widget>
+                </item>
+
+                <!-- textColorGSpinBox -->
+                <item>
+                    <widget class="QSpinBox" name="textColorGSpinBox">
+                        <property name="value">
+                            <number>255</number>
+                        </property>
+                        <property name="minimum">
+                            <number>0</number>
+                        </property>
+                        <property name="maximum">
+                            <number>255</number>
+                        </property>
+                    </widget>
+                </item>
+
+                <!-- textColorBSpinBox -->
+                <item>
+                    <widget class="QSpinBox" name="textColorBSpinBox">
+                        <property name="value">
+                            <number>255</number>
+                        </property>
+                        <property name="minimum">
+                            <number>0</number>
+                        </property>
+                        <property name="maximum">
+                            <number>255</number>
+                        </property>
+                    </widget>
+                </item>
+
+                <!-- jsonPreviewTextEdit -->
+                <item>
+                    <widget class="QTextEdit" name="jsonPreviewTextEdit">
+                        <property name="readOnly">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </item>
+
+                <!-- spriteEntityLineEdit -->
+                <item>
+                    <widget class="QLineEdit" name="spriteEntityLineEdit">
+                        <property name="placeholderText">
+                            <string>Entité du sprite</string>
+                        </property>
+                    </widget>
+                </item>
+
+                <!-- spriteAssetLineEdit -->
+                <item>
+                    <widget class="QLineEdit" name="spriteAssetLineEdit">
+                        <property name="placeholderText">
+                            <string>Asset du sprite</string>
+                        </property>
+                    </widget>
+                </item>
+
+                <!-- spriteScaleXSpinBox -->
+                <item>
+                    <widget class="QDoubleSpinBox" name="spriteScaleXSpinBox">
+                        <property name="value">
+                            <double>1.0</double>
+                        </property>
+                        <property name="minimum">
+                            <double>0.1</double>
+                        </property>
+                        <property name="maximum">
+                            <double>10.0</double>
+                        </property>
+                    </widget>
+                </item>
+
+                <!-- spriteScaleYSpinBox -->
+                <item>
+                    <widget class="QDoubleSpinBox" name="spriteScaleYSpinBox">
+                        <property name="value">
+                            <double>1.0</double>
+                        </property>
+                        <property name="minimum">
+                            <double>0.1</double>
+                        </property>
+                        <property name="maximum">
+                            <double>10.0</double>
+                        </property>
+                    </widget>
+                </item>
+
+                <!-- Position Section (Added Widgets) -->
+
+                <!-- positionEntityLineEdit -->
+                <item>
+                    <widget class="QLineEdit" name="positionEntityLineEdit">
+                        <property name="placeholderText">
+                            <string>Nom de l'entité de position</string>
+                        </property>
+                    </widget>
+                </item>
+
+                <!-- positionXSpinBox -->
+                <item>
+                    <widget class="QSpinBox" name="positionXSpinBox">
+                        <property name="value">
+                            <number>0</number>
+                        </property>
+                        <property name="minimum">
+                            <number>-1000</number>
+                        </property>
+                        <property name="maximum">
+                            <number>1000</number>
+                        </property>
+                    </widget>
+                </item>
+
+                <!-- positionYSpinBox -->
+                <item>
+                    <widget class="QSpinBox" name="positionYSpinBox">
+                        <property name="value">
+                            <number>0</number>
+                        </property>
+                        <property name="minimum">
+                            <number>-1000</number>
+                        </property>
+                        <property name="maximum">
+                            <number>1000</number>
+                        </property>
+                    </widget>
+                </item>
+
+                <!-- Buttons -->
+                <item>
+                    <widget class="QPushButton" name="applyButton">
+                        <property name="text">
+                            <string>Appliquer</string>
+                        </property>
+                    </widget>
+                </item>
+
+                <item>
+                    <widget class="QPushButton" name="previewButton">
+                        <property name="text">
+                            <string>Aperçu JSON</string>
+                        </property>
+                    </widget>
+                </item>
+
+                                <item>
+                    <widget class="QPushButton" name="addPositionButton">
+                        <property name="text">
+                            <string>Ajouter Position</string>
+                        </property>
+                    </widget>
+                </item>
+
+
+                <item>
+                    <widget class="QPushButton" name="addEntityButton">
+                        <property name="text">
+                            <string>Ajouter Entité</string>
+                        </property>
+                    </widget>
+                </item>
+
+                <item>
+                    <widget class="QPushButton" name="addSpriteButton">
+                        <property name="text">
+                            <string>Ajouter Sprite</string>
+                        </property>
+                    </widget>
+                </item>
+
+                <item>
+                    <widget class="QPushButton" name="addTextButton">
+                        <property name="text">
+                            <string>Ajouter Texte</string>
+                        </property>
+                    </widget>
+                </item>
+
+                <item>
+                    <widget class="QPushButton" name="saveJsonButton">
+                        <property name="text">
+                            <string>Enregistrer JSON</string>
+                        </property>
+                    </widget>
+                </item>
+
+            </layout>
+        </widget>
+
+        <!-- Menu Bar -->
+        <widget class="QMenuBar" name="menubar">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>800</width>
+                    <height>23</height>
+                </rect>
+            </property>
+        </widget>
+
+        <!-- Status Bar -->
+        <widget class="QStatusBar" name="statusbar"/>
+    </widget>
+
+    <resources/>
+    <connections>
+        <!-- Connections -->
+        <connection>
+            <sender name="applyButton"/>
+            <signal>clicked()</signal>
+            <receiver name="MainWindow"/>
+            <slot>onApplyButtonClicked()</slot>
+        </connection>
+
+        <connection>
+            <sender name="previewButton"/>
+            <signal>clicked()</signal>
+            <receiver name="MainWindow"/>
+            <slot>onPreviewButtonClicked()</slot>
+        </connection>
+
+        <connection>
+            <sender name="addEntityButton"/>
+            <signal>clicked()</signal>
+            <receiver name="MainWindow"/>
+            <slot>on_addEntityButton_clicked()</slot>
+        </connection>
+
+        <connection>
+            <sender name="addSpriteButton"/>
+            <signal>clicked()</signal>
+            <receiver name="MainWindow"/>
+            <slot>on_addSpriteButton_clicked()</slot>
+        </connection>
+
+        <connection>
+            <sender name="addTextButton"/>
+            <signal>clicked()</signal>
+            <receiver name="MainWindow"/>
+            <slot>on_addTextButton_clicked()</slot>
+        </connection>
+
+        <connection>
+            <sender name="saveJsonButton"/>
+            <signal>clicked()</signal>
+            <receiver name="MainWindow"/>
+            <slot>on_saveJsonButton_clicked()</slot>
+        </connection>
+
+    </connections>
+</ui>

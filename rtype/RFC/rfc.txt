@@ -1,0 +1,271 @@
+RRRRRRRRRRRRRRRRR    TTTTTTTTTTTTTTTTTTTTTTT3YYYYYYY       YYYYYYYPPPPPPPPPPPPPPPPP  EEEEEEEEEEEEEEEEEEEEEEEE
+R::::::::::::::::R   T:::::::::::::::::::::T Y:::::Y       Y:::::YP::::::::::::::::P E::::::::::::::::::::E
+R::::::RRRRRR:::::R  T:::::::::::::::::::::T Y:::::Y       Y:::::YP::::::PPPPPP:::::P E::::::::::::::::::::E
+RR:::::R     R:::::R T:::::TT:::::::TT:::::T Y::::::Y     Y::::::YPP:::::P     P:::::PEE::::::EEEEEEEEE::::E
+  R::::R     R:::::R TTTTTT  T:::::T  TTTTTT YYY:::::Y   Y:::::YYY  P::::P     P:::::P  E:::::E       EEEEEE
+  R::::R     R:::::R         T:::::T          Y:::::Y Y:::::Y      P::::P     P:::::P  E:::::E             
+  R::::RRRRRR:::::R          T:::::T           Y:::::Y:::::Y       P::::PPPPPP:::::P   E::::::EEEEEEEEEE   
+  R:::::::::::::RR           T:::::T            Y:::::::::Y        P:::::::::::::PP    E:::::::::::::::E   
+  R::::RRRRRR:::::R          T:::::T             Y:::::::Y         P::::PPPPPPPPP      E:::::::::::::::E   
+  R::::R     R:::::R         T:::::T              Y:::::Y          P::::P              E::::::EEEEEEEEEE   
+  R::::R     R:::::R         T:::::T              Y:::::Y          P::::P              E:::::E             
+  R::::R     R:::::R         T:::::T              Y:::::Y          P::::P              E:::::E       EEEEEE
+RR:::::R     R:::::R       TT:::::::TT            Y:::::Y        PP::::::PP          EE::::::EEEEEEEE:::::E
+R::::::R     R:::::R       T:::::::::T            Y:::::Y        P::::::::P          E::::::::::::::::::::E
+R::::::R     R:::::R       T:::::::::T            Y:::::Y        P::::::::P          E::::::::::::::::::::E
+RRRRRRRR     RRRRRRR       TTTTTTTTTTT            YYYYYYY        PPPPPPPPPP          EEEEEEEEEEEEEEEEEEEEEEE
+
+
+
+EPITECH-BÉNIN 
+                                                                                                                              Status: Informational  
+                                                                                                                              Author: Christ HOUNKANRIN 
+                                                                                                                                      omer DEDO
+                                                                                                                                      Ange-Marie DOSSOU
+                                                                                                                                      Ted DSK
+
+                                                                                                                              Date: October 11, 2024  
+
+                                                         Status of this Document
+
+This document provides the official specification for the R-Type UDP protocol. R-Type is a third-year project at EPITECH.
+Distribution of this document is unlimited.
+
+RFC: UDP Communication Protocol for a Multiplayer Game
+
+                                                         Table of Contents
+                                                         1. ...................................Introduction  
+                                                         2. ...................................General Architecture  
+                                                            2.1. ..............................Key Components  
+                                                            2.2. ..............................Communication Flow  
+                                                         3. ...................................Protocol Details  
+                                                            3.1. ..............................Message Format  
+                                                            3.2. ..............................Message Types  
+                                                            3.3. ..............................Player Management on the Map  
+                                                            3.4. ..............................Shooting and Kill Mechanism  
+                                                         4. ...................................Security Management  
+                                                         5. ...................................Error Handling  
+                                                         6. ...................................Flow Diagrams  
+                                                            6.1. ..............................Connection and Authentication  
+                                                            6.2. ..............................Player Movement 
+                                                            6.3. ..............................Client Class Overview
+                                                            6.4. ..............................Key Components && Detailed Functionality:
+
+                                                         7. ...................................Conclusion  
+
+
+
+1. Introduction
+
+This RFC outlines a UDP-based communication protocol designed for a real-time multiplayer game. 
+The protocol handles player connections, authentication, movement on the game map, and actions such as shooting and killing opponents.
+
+The goal is to provide an efficient and scalable framework for managing real-time 
+interactions in a multiplayer environment where multiple clients interact with a central server.
+
+
+
+2. General Architecture
+
+2.1. Key Components
+- Client: The program running on the player’s side, sending game commands to the server and receiving game updates.
+- Server: The central program that coordinates and synchronizes actions between clients, 
+   manages player states (position, actions, etc.), and sends updated information back to all clients.
+- UDP Protocol: UDP (User Datagram Protocol) is used to minimize latency and maximize responsiveness, 
+   at the cost of reliability (no error correction or automatic packet retransmission).
+
+2.2. Communication Flow
+1. Initial Connection: Clients connect to the server by sending a connection message (type 0x01).
+2. Authentication: After connecting, players authenticate by sending their username (type 0x02).
+3. Player Management: The server synchronizes player positions and periodically sends updates on the state of the game map.
+4. Player Actions: Players can send movement, shooting, and other action commands (types 0x05, 0x06 for shooting, and 0x07 for kills).
+
+
+3. Protocol Details
+
+3.1. Message Format
+
+Each message is structured with a standard header, payload size, and data.
+
+| Field      | Size (bytes)    | Description                       	|
+|------------|-----------------|------------------------------------|
+| Header     | 2               | Message type                      	|
+| Size	    | 2               | Size of the payload               	|
+| Data	    | Variable        | info depending on the msg type     |
+
+
+3.2. Message Types
+
+- 0x01: Client initial connection to the server.
+- 0x02: Player authentication (sends username).
+- 0x03: Synchronizing player positions (server response).
+- 0x05: Player movement (e.g., 0x05a for up, 0x05b for down).
+- 0x06: Player shooting action (not yet implemented).
+- 0x07: Kill notification (not yet implemented).
+- 0x08: Player disconnection (not yet implemented).
+
+
+3.3. Player Management on the Map
+
+Each player is identified by a unique ID and has a set of information stored in a structure.
+Here is an example of a structure for storing player data on the game map:
+
+struct Player {
+   int playerID;	// Unique identifier for the player
+   int posX;    	// X position on the map
+   int posY;    	// Y position on the map
+};
+
+
+The server maintains a map containing the state of each player. During each game update, 
+the server sends a message of type 0x03 to clients, including the positions of all players and their status (alive or dead).
+
+3.4. Shooting and Kill Mechanism
+
+- Shooting (0x06): When a player performs a shooting action, a message is sent to the server.
+This message contains the direction of the shot and the player's current coordinates. The server checks if another player is hit.
+ 
+- Kill (0x07): When a player kills another, the server sends a message of type 0x07 to notify all other players.
+This message contains the killer’s and the victim's IDs.
+
+
+4. Security Management
+
+All messages are encrypted before being sent to ensure the confidentiality of exchanged data.
+The current encryption method is basic but can be improved with more advanced encryption techniques in future versions.
+
+
+5. Error Handling
+
+The protocol includes robust error handling.
+For example, if the server receives a malformed message, it should respond with an error message with a specific error code:
+
+- 0xE1: Invalid message.
+- 0xE2: Player not authenticated.
+
+
+
+
+
+6. Flow Diagrams
+
+
+6.1. Connection and Authentication
+
+
+
+
+
+Client               	Server
+   |                     	  |
+   | ---- Connection ----->   |
+   |                          |
+   | <--- Auth Request ----   |
+   |                          |
+   | ---- Auth OK -------->   |
+   |                     	  |
+   | <--- Game Start ------   |
+
+
+
+
+
+6.2. Player Movement
+
+
+
+
+
+Client               	  Server
+   |                       |
+   | -- Send Movement ---> |
+   |                       |
+   | <--- Update Position--|
+
+
+
+
+
+
+Client Class Overview
+
+The Client class is responsible for managing the connection to a server, handling communication through the UDP protocol, 
+and processing the game data. It makes use of Boost.Asio for asynchronous networking and SFML (Simple and Fast Multimedia Library) 
+for handling the game window and input (though the window management is commented out).
+
+Key Components
+
+- Boost.Asio for Networking:
+  - The client sends and receives data to/from the server asynchronously using UDP sockets.
+  - The communication protocol is built using the BinaryProtocol class (though its code isn't provided here) which handles encryption and decryption of messages.
+
+- Message Protocol:
+  - The client sends specific messages to the server using various headers such as 0x01 for connection, 
+  0x02 for authentication, 0x05a through 0x05d for player movement.
+
+ Detailed Functionality:
+
+1. Constructor (Client::Client)
+   - Initializes the UDP socket for communication.
+   - Takes the server IP and port as parameters and validates the IP address. If the IP is invalid, an exception is thrown.
+
+2. Connection (Client::connect)
+   - The client sends a connection request (message with the header 0x01) to the server using UDP.
+   - After sending the message, the client listens for server responses via the recevM() method.
+
+3. Authentication (Client::authenticate)
+   - The client sends an authentication message (with the username) to the server using the header 0x02.
+   - Like the connection message, it sends the request and waits for a server response through recevM().
+
+4. Receiving Messages (Client::recevM)
+   - Asynchronously listens for incoming messages from the server.
+   - Processes various message types based on their header:
+     - 0x03: Updates local player information (ID, position).
+     - 0x05M: Updates the position of other players.
+     - 0x04: Indicates that the player can start the game.
+   - Keeps receiving messages in a loop by recursively calling recevM().
+
+5. Waiting to Start (Client::waitForStart)
+   - This method continuously checks if the player is allowed to play (can_play == true) by polling the I/O context.
+
+6. Sending Movement (Client::sendM)
+   - Sends movement commands based on keyboard input (currently hardcoded with up, down, left, and right).
+   - Each movement has a corresponding message header (0x05a to 0x05d).
+   - The player's current position and ID are included in the message before being encrypted and sent.
+
+7. Game Loop (Commented Out)
+   - The gameLoop method (currently commented) would create a game window and handle user input for movement within the game.
+   - Based on the player's input (e.g., arrow keys), it sends movement commands to the server.
+   - It also displays information about other players by accessing their data from the server.
+
+8. Main Function
+   - The main function initializes the Boost.Asio context and sets up the client.
+   - It attempts to connect to the server and, if successful, waits for the game to start. 
+   Once the game starts, the gameLoop would be called (if implemented).
+
+
+ Summary of the Protocol
+
+- Message Structure: Each message contains:
+  - A header: Identifies the type of message (e.g., connection, authentication, movement).
+  - Player coordinates: Includes the pos_x and pos_y of the player.
+  - Optional data: For example, the username is included during authentication.
+
+
+This client code is ready to connect to a game server, authenticate the player, and send movement commands. 
+
+
+
+7. Conclusion
+
+This UDP communication protocol provides a strong and extensible base for real-time multiplayer games.
+It manages player connections, authentication, movements, and game actions such as shooting and killing.
+Future improvements may include stronger encryption and more sophisticated error handling mechanisms.
+
+
+
+
+01010010    00101101    01010100    01011001    01010000    01000101
+    R          -            T          Y           P            E
+
+thanks ....................................................................... Ange Dossou
